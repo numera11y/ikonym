@@ -4,7 +4,7 @@ Ikonym fournit des définitions DiceBear portables en JSON. Les bibliothèques D
 
 ## Disponibilité actuelle
 
-Le paquet `ikonym` est publié sur npm, PyPI et crates.io, et `numera11y/ikonym` est disponible sur Packagist. Le module Go est disponible à l’adresse `github.com/numera11y/ikonym` (v0.2.0), ainsi que les bibliothèques Python et Rust. Le site propose aussi le tarball npm et le téléchargement direct des styles. Le [dépôt GitHub public](https://github.com/numera11y/ikonym) héberge le code source et le suivi des problèmes.
+Le paquet `ikonym` est publié sur npm, PyPI, crates.io et pub.dev, et `numera11y/ikonym` est disponible sur Packagist. Le module Go est disponible à l’adresse `github.com/numera11y/ikonym` (v0.2.0), ainsi que les bibliothèques Python et Rust. Le site propose aussi le tarball npm et le téléchargement direct des styles. Le [dépôt GitHub public](https://github.com/numera11y/ikonym) héberge le code source et le suivi des problèmes.
 
 Télécharge le fichier de style depuis le site ou récupère-le dans `styles/` après avoir cloné le dépôt. Choisis une grille de 3×3, 5×5, 7×7, 9×9 ou 12×12 selon la densité voulue. Après publication, le style devra être proposé dans les collections DiceBear pour être installable directement depuis chaque registre.
 
@@ -169,24 +169,20 @@ func main() {
 Prérequis : Dart 3.4+.
 
 ```sh
-dart pub add dicebear_core
+dart pub add ikonym
 ```
 
 ```dart
-import 'dart:io';
-import 'package:dicebear_core/dicebear_core.dart';
+import 'package:ikonym/ikonym.dart';
 
 void main() {
-  final definition = File('styles/ikonym-7.json').readAsStringSync();
-  final style = Style.parse(definition);
-  final avatar = Avatar(style, {
-    'seed': 'nacre-lunaire',
-    'size': 128,
-    'borderRadius': 0,
-    'title': 'Avatar d’Alice',
-  });
-
-  final svg = avatar.svg;
+  final svg = createAvatar(
+    'nacre-lunaire',
+    density: 7,
+    size: 128,
+    title: 'Avatar d’Alice',
+  );
+  print(svg);
 }
 ```
 

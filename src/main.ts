@@ -62,14 +62,11 @@ func main() {
 }`,
   },
   Dart: {
-    install: 'dart pub add dicebear_core',
-    code: `import 'dart:io';
-import 'package:dicebear_core/dicebear_core.dart';
+    install: 'dart pub add ikonym',
+    code: `import 'package:ikonym/ikonym.dart';
 
 void main() {
-final definition = File('styles/ikonym-7.json').readAsStringSync();
-final style = Style.parse(definition);
-final svg = Avatar(style, {'seed': 'nacre-lunaire', 'size': 128}).svg;
+  final svg = createAvatar('nacre-lunaire', density: 7, size: 128);
   print(svg);
 }`,
   },

@@ -1,0 +1,21 @@
+name: ikonym
+description: Deterministic geometric SVG avatars generated from a stable identifier.
+version: 0.1.0
+repository: https://github.com/numera11y/ikonym
+homepage: https://ikonym.numera11y.fr
+issue_tracker: https://github.com/numera11y/ikonym/issues
+topics:
+  - avatar
+  - dicebear
+  - identicon
+  - svg
+
+environment:
+  sdk: ^3.4.0
+
+dependencies:
+  dicebear_core: ^10.7.0
+
+dev_dependencies:
+  lints: ^4.0.0
+  test: ^1.25.0
