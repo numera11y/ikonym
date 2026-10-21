@@ -16,9 +16,7 @@ Ikonym is distributed under the MIT License. You may use, modify, and sell it. A
 
 ## Integrations
 
-The same JSON style definition works with official DiceBear engines for JavaScript, PHP, Python, Rust, Go, Dart, and C#. This avoids seven separate ports and keeps the same result for a given identifier. See the [installation guide and complete examples](docs/INTEGRATIONS.md). The package is available on npm for JavaScript; other language examples use the JSON files in this repository.
-
-The Composer package `numera11y/ikonym` provides the portable JSON definitions and a PHP helper for loading them. Composer installation depends on Packagist registration; until it is listed there, clone this repository and use the JSON files directly.
+The same JSON style definition works with official DiceBear engines for JavaScript, PHP, Python, Rust, Go, Dart, and C#. This avoids seven separate ports and keeps the same result for a given identifier. See the [installation guide and complete examples](docs/INTEGRATIONS.md). The JavaScript package is published on npm; `numera11y/ikonym` is also available on Packagist for PHP and includes a helper for loading the portable JSON definitions.
 
 ## Usage
 
@@ -31,6 +29,8 @@ const imageUrl = createAvatarDataUri('ikon-satin');
 const palette = getPaletteForSeed('ikon-satin');
 // { colors: { navy, blue, cyan, pink, orange, yellow, mint, cream }, pattern }
 ```
+
+For PHP, install Ikonym and the DiceBear engine with `composer require numera11y/ikonym dicebear/core`, then load a style with `Numera11y\Ikonym\StyleDefinition::json(7)`. See the [PHP integration example](docs/INTEGRATIONS.md#php).
 
 Install Ikonym from npm with `npm install ikonym`, or download the versioned `.tgz` tarball from this site.
 

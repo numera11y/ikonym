@@ -1,6 +1,6 @@
 # DiceBear style definitions
 
-The JSON files in this directory are portable saturated-mosaic definitions for the official DiceBear Core libraries. They can be loaded from JavaScript, PHP, Python, Rust, Go, Dart, and C#. The npm package exports `ikonym/styles/ikonym-3.json`, `ikonym/styles/ikonym-5.json`, `ikonym/styles/ikonym-7.json`, `ikonym/styles/ikonym-9.json`, and `ikonym/styles/ikonym-12.json` once published.
+The JSON files in this directory are portable saturated-mosaic definitions for the official DiceBear Core libraries. They can be loaded from JavaScript, PHP, Python, Rust, Go, Dart, and C#. The npm package exports `ikonym/styles/ikonym-3.json`, `ikonym/styles/ikonym-5.json`, `ikonym/styles/ikonym-7.json`, `ikonym/styles/ikonym-9.json`, and `ikonym/styles/ikonym-12.json`. The Composer package also includes the five JSON definitions.
 
 Regenerate the 3×3, 5×5, 7×7, 9×9 and 12×12 definitions with `npm run styles:build`, then validate them against DiceBear Core with `npm run styles:validate`.
 
