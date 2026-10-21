@@ -4,7 +4,7 @@ Ikonym provides portable DiceBear JSON style definitions. Official DiceBear engi
 
 ## Current availability
 
-The `ikonym` package is published to npm and PyPI, and `numera11y/ikonym` is published on Packagist. Composer provides a PHP helper; PyPI provides a Python helper. A Rust crate is being prepared for crates.io. This site also offers direct downloads of the npm tarball and JSON styles. Source code and issue tracking are available in the [public GitHub repository](https://github.com/numera11y/ikonym).
+The `ikonym` package is published to npm, PyPI, and crates.io; `numera11y/ikonym` is published on Packagist. Composer provides a PHP helper, and the Python and Rust packages provide avatar-generation helpers. This site also offers direct downloads of the npm tarball and JSON styles. Source code and issue tracking are available in the [public GitHub repository](https://github.com/numera11y/ikonym).
 
 Choose a 3×3, 5×5, 7×7, 9×9, or 12×12 grid for the desired density. After release, the style will still need to be proposed to the DiceBear collections before it can be installed from their registries.
 
@@ -122,28 +122,18 @@ svg = avatar.to_string()
 
 Requirements: Rust 1.80+.
 
-The `ikonym` crate is being prepared for crates.io. The portable JSON definition can be used directly with DiceBear Core today.
+Install the `ikonym` crate from crates.io:
 
 ```sh
-cargo add dicebear-core serde_json
+cargo add ikonym
 ```
 
 ```rust
-use dicebear_core::{Avatar, Style};
-use serde_json::json;
-use std::fs;
+use ikonym::create_avatar;
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let definition = fs::read_to_string("styles/ikonym-7.json")?;
-    let style = Style::from_str(&definition)?;
-    let avatar = Avatar::new(&style, json!({
-        "seed": "ikon-satin",
-        "size": 128,
-        "borderRadius": 0,
-        "title": "Alice’s avatar"
-    }))?;
-
-    let svg = avatar.to_svg();
+    let svg = create_avatar("ikon-satin", 7, 128, 0, Some("Alice’s avatar"))?;
+    println!("{svg}");
     Ok(())
 }
 ```

@@ -37,14 +37,11 @@ use Numera11y\\Ikonym\\StyleDefinition;
 svg = create_avatar('ikon-satin', density=7, size=128)`,
   },
   Rust: {
-    install: 'cargo add dicebear-core serde_json',
-    code: `use dicebear_core::{Avatar, Style};
-use serde_json::json;
+    install: 'cargo add ikonym',
+    code: `use ikonym::create_avatar;
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let definition = std::fs::read_to_string("styles/ikonym-7.json")?;
-    let style = Style::from_str(&definition)?;
-    let svg = Avatar::new(&style, json!({ "seed": "nacre-lunaire", "size": 128 }))?.to_svg();
+    let svg = create_avatar("ikon-satin", 7, 128, 0, None)?;
     println!("{svg}");
     Ok(())
 }`,
