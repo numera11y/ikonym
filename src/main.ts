@@ -11,7 +11,7 @@ import './brand.css';
 const seeds = ['nacre-lunaire', 'ormeau-bleu', 'murex-secret', 'conque-velours', 'nautilus-graphique', 'spirale-rose', 'abalone', 'perle-abyssale', 'onde-de-nacre', 'corail-satin', 'bivalve-iris', 'coquille-cosmique'];
 const integrations = {
   JavaScript: {
-    install: `npm install ./ikonym-${packageInfo.version}.tgz`,
+    install: 'npm install ikonym',
     code: `import { createAvatar } from 'ikonym';
 
 const svg = createAvatar('perle-rare', {
@@ -21,12 +21,13 @@ const svg = createAvatar('perle-rare', {
 });`,
   },
   PHP: {
-    install: 'composer require dicebear/core',
+    install: 'composer require dicebear/core numera11y/ikonym',
     code: `<?php
 use DiceBear\\Avatar;
 use DiceBear\\Style;
+use Numera11y\\Ikonym\\StyleDefinition;
 
-     $style = Style::fromJson(file_get_contents(__DIR__ . '/styles/ikonym-7.json'));
+     $style = Style::fromJson(StyleDefinition::json(7));
  $svg = (string) new Avatar($style, ['seed' => 'nacre-lunaire', 'size' => 128]);`,
   },
   Python: {
@@ -293,8 +294,8 @@ function applyAudienceCopy() {
     : 'Développeurs : intégrez la bibliothèque JavaScript ou chargez la définition DiceBear JSON avec les SDK compatibles. Même identifiant, même définition : le même SVG dans votre interface.';
   const licenseNote = app.querySelector('.release-note');
   if (licenseNote) licenseNote.innerHTML = english
-    ? '<strong>Open source · MIT</strong> Use, modify, and sell Ikonym. Redistribution, including modified versions, must retain the copyright notice and MIT license. The npm package is available as a direct download before publication. <a href="https://opensource.org/license/mit/">Read the MIT license</a>.'
-    : '<strong>Open source · MIT</strong> Utilisez, modifiez et commercialisez Ikonym. Toute redistribution, y compris d’une version modifiée, doit conserver la notice de copyright et la licence MIT. Le package npm est proposé en téléchargement direct avant sa publication sur npm. <a href="https://opensource.org/license/mit/">Lire la licence MIT</a>.';
+    ? '<strong>Open source · MIT</strong> Use, modify, and sell Ikonym. Redistribution, including modified versions, must retain the copyright notice and MIT license. Install with <code>npm install ikonym</code>. <a href="https://opensource.org/license/mit/">Read the MIT license</a>.'
+    : '<strong>Open source · MIT</strong> Utilisez, modifiez et commercialisez Ikonym. Toute redistribution, y compris d’une version modifiée, doit conserver la notice de copyright et la licence MIT. Installez avec <code>npm install ikonym</code>. <a href="https://opensource.org/license/mit/">Lire la licence MIT</a>.';
   const integrationLink = app.querySelector<HTMLAnchorElement>('.integration-intro .text-link');
   if (integrationLink) integrationLink.innerHTML = `${english ? 'Read the integration guide' : 'Voir le guide d’intégration'} ${icon('arrow')}`;
   const installLabel = app.querySelector('.install-row > span');
@@ -321,7 +322,7 @@ function applyAudienceCopy() {
     ? 'For other languages, use the official DiceBear engines and the matching JSON style definition. Find runnable examples in the integrations section.'
     : 'Pour les autres langages, utilisez les moteurs DiceBear officiels et la définition JSON correspondante. Retrouvez des exemples exécutables dans la section Intégrations.';
   const installCommand = app.querySelector('#docs-install .docs-command code');
-  if (installCommand) installCommand.textContent = `npm install ./ikonym-${packageInfo.version}.tgz`;
+  if (installCommand) installCommand.textContent = 'npm install ikonym';
   const definitionsHeading = app.querySelector('#docs-definitions h3');
   if (definitionsHeading) definitionsHeading.textContent = english ? 'Choose a density' : 'Choisir une densité';
   const definitionsIntro = app.querySelector('#docs-definitions > p');

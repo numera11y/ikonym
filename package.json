@@ -46,6 +46,7 @@
     "build:lib": "tsc -p tsconfig.lib.json && vite build --config vite.lib.config.ts",
     "styles:build": "node scripts/build-styles.mjs",
     "styles:validate": "npm run build:lib && node scripts/validate-styles.mjs",
+    "composer:validate": "php scripts/validate-composer.php",
     "social:build": "node scripts/build-social-images.mjs",
     "contrast:validate": "node scripts/validate-contrast.mjs",
     "package:download": "npm pack --pack-destination public/downloads",

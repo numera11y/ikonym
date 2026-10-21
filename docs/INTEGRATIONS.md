@@ -4,7 +4,7 @@ Ikonym provides portable DiceBear JSON style definitions. Official DiceBear engi
 
 ## Current availability
 
-The `ikonym` package is not yet published to npm, Composer, PyPI, crates.io, pkg.go.dev, pub.dev, or NuGet. This site offers a prebuilt npm tarball and the JSON style definitions. Source code and issue tracking are available in the [public GitHub repository](https://github.com/numera11y/ikonym). For JavaScript, install the downloaded `.tgz` file; for other languages, put the matching `ikonym-3.json`, `-5.json`, `-7.json`, `-9.json`, or `-12.json` file in your `styles/` directory.
+The `ikonym` package is published to npm. A Composer package named `numera11y/ikonym`, containing a PHP helper and the portable style definitions, is being prepared for Packagist. This site also offers direct downloads of the tarball and JSON styles. Source code and issue tracking are available in the [public GitHub repository](https://github.com/numera11y/ikonym).
 
 Choose a 3×3, 5×5, 7×7, 9×9, or 12×12 grid for the desired density. After release, the style will still need to be proposed to the DiceBear collections before it can be installed from their registries.
 
@@ -23,7 +23,7 @@ Choose a 3×3, 5×5, 7×7, 9×9, or 12×12 grid for the desired density. After r
 Requirements: Node.js 22+.
 
 ```sh
-npm install ./ikonym-0.1.0.tgz
+npm install ikonym
 ```
 
 ```js
@@ -58,7 +58,7 @@ const svg = new Avatar(new Style(definition), {
 Requirements: PHP 8.2+.
 
 ```sh
-composer require dicebear/core
+composer require dicebear/core numera11y/ikonym
 ```
 
 ```php
@@ -66,8 +66,9 @@ composer require dicebear/core
 
 use DiceBear\Avatar;
 use DiceBear\Style;
+use Numera11y\Ikonym\StyleDefinition;
 
-$style = Style::fromJson(file_get_contents(__DIR__ . '/styles/ikonym-7.json'));
+$style = Style::fromJson(StyleDefinition::json(7));
 $avatar = new Avatar($style, [
     'seed' => 'ikon-satin',
     'size' => 128,

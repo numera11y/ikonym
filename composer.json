@@ -1,0 +1,29 @@
+{
+  "name": "numera11y/ikonym",
+  "description": "Portable geometric DiceBear avatar style definitions for five grid densities.",
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://ikonym.numera11y.fr",
+  "keywords": [
+    "avatar",
+    "dicebear",
+    "identicon",
+    "svg",
+    "mosaic"
+  ],
+  "support": {
+    "issues": "https://github.com/numera11y/ikonym/issues",
+    "source": "https://github.com/numera11y/ikonym"
+  },
+  "require": {
+    "php": "^8.2"
+  },
+  "suggest": {
+    "dicebear/core": "Use Ikonym JSON definitions with the DiceBear PHP engine."
+  },
+  "autoload": {
+    "psr-4": {
+      "Numera11y\\Ikonym\\": "php/src/"
+    }
+  }
+}

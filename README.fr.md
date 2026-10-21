@@ -9,7 +9,7 @@ Chaque identifiant compose une mosaïque de formes inspirées des coquillages : 
 
 Deux carreaux voisins par un côté n’utilisent jamais la même famille de motifs, même si leur couleur ou leur orientation diffère.
 
-> **Statut : prépublication.** Le paquet `ikonym` n’est pas encore publié sur npm. Le site propose un tarball npm installable localement ainsi que les définitions JSON pour les autres moteurs DiceBear.
+Le paquet `ikonym` est publié sur npm. Le site propose aussi le tarball de la version courante et les définitions JSON pour les moteurs DiceBear compatibles.
 
 Ikonym est développé par [Numera11y](https://www.numera11y.fr/) et sera présenté dans son catalogue d’outils numériques. [Consultez le code source, signalez un problème ou contribuez sur GitHub](https://github.com/numera11y/ikonym).
 
@@ -19,7 +19,9 @@ Ikonym est distribué sous licence MIT. Vous pouvez l’utiliser, le modifier et
 
 ## Intégrations multi-langages
 
-Une même définition de style JSON est lue par les moteurs DiceBear officiels pour JavaScript, PHP, Python, Rust, Go, Dart et C#. Cela évite sept ports séparés et conserve le même résultat pour un identifiant donné. Voir le [guide d’installation et les exemples complets](docs/INTEGRATIONS.fr.md). Le paquet de style Ikonym n’est pas encore publié sur les registres; les exemples utilisent le fichier JSON du dépôt.
+Une même définition de style JSON est lue par les moteurs DiceBear officiels pour JavaScript, PHP, Python, Rust, Go, Dart et C#. Cela évite sept ports séparés et conserve le même résultat pour un identifiant donné. Voir le [guide d’installation et les exemples complets](docs/INTEGRATIONS.fr.md). Le package JavaScript est publié sur npm; les autres exemples utilisent les fichiers JSON du dépôt.
+
+Le package Composer `numera11y/ikonym` fournit les définitions JSON portables et un helper PHP pour les charger. Son installation via Composer dépend de son référencement sur Packagist; dans l’intervalle, clonez ce dépôt et utilisez directement les fichiers JSON.
 
 ## Utilisation
 
@@ -33,7 +35,7 @@ const palette = getPaletteForSeed('ikon-satin');
 // { colors: { navy, blue, cyan, pink, orange, yellow, mint, cream }, pattern }
 ```
 
-Depuis le site, télécharge le tarball `.tgz`, puis installe-le dans ton projet avec `npm install ./ikonym-0.1.0.tgz`. Après la publication npm, cette étape deviendra `npm install ikonym`.
+Installe Ikonym depuis npm avec `npm install ikonym`, ou télécharge le tarball `.tgz` de la version courante depuis le site.
 
 `createAvatar(seed, options?)` retourne un document SVG. `createAvatarDataUri(seed, options?)` le retourne sous forme d’URI de données, utilisable dans un élément image HTML. `getPaletteForSeed(seed, density?)` expose les huit couleurs et le motif sélectionnés par l’identifiant. Dans l’API, `seed` désigne cet identifiant (pseudo, nom ou ID utilisateur). Les options sont `size` (24–1024, défaut 160), `density` (grille 3 × 3, 5 × 5, 7 × 7, 9 × 9 ou 12 × 12; défaut 7) et `paletteColors` (palette personnalisée facultative). `radius` (0–50) reste disponible. Les anciens `waveCount`, `pieceCount` et `gridSize` sont conservés comme alias dépréciés de la densité.
 
@@ -63,7 +65,7 @@ npm run build
 
 `styles:validate` compares the JavaScript package output against DiceBear Core, verifies complete tile coverage and deterministic pattern/color variation at each density.
 
-Le tarball peut être installé avec `npm install ./ikonym-0.1.0.tgz`. Pour une installation directe depuis npm, il reste à publier la version depuis le compte du mainteneur et à héberger le dépôt source.
+Le dépôt source public est disponible sur [github.com/numera11y/ikonym](https://github.com/numera11y/ikonym); les versions sont publiées sur npm.
 
 ## DiceBear
 

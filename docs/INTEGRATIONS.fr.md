@@ -4,7 +4,7 @@ Ikonym fournit des définitions DiceBear portables en JSON. Les bibliothèques D
 
 ## Disponibilité actuelle
 
-Le paquet `ikonym` n’est pas encore publié sur npm, Composer, PyPI, crates.io, pkg.go.dev, pub.dev ou NuGet. Le site permet de télécharger le tarball npm préconstruit et le JSON du style choisi. Le [dépôt GitHub public](https://github.com/numera11y/ikonym) héberge le code source et le suivi des problèmes. Pour JavaScript, place le fichier `.tgz` téléchargé dans ton projet; pour les autres langages, place la définition de densité souhaitée parmi `ikonym-3.json`, `-5.json`, `-7.json`, `-9.json` et `-12.json` dans `styles/`.
+Le paquet `ikonym` est publié sur npm. Un package Composer `numera11y/ikonym`, qui inclura un helper PHP et les définitions JSON portables, est en préparation pour Packagist. Le site propose aussi le tarball et le téléchargement direct des styles. Le [dépôt GitHub public](https://github.com/numera11y/ikonym) héberge le code source et le suivi des problèmes.
 
 Télécharge le fichier de style depuis le site ou récupère-le dans `styles/` après avoir cloné le dépôt. Choisis une grille de 3×3, 5×5, 7×7, 9×9 ou 12×12 selon la densité voulue. Après publication, le style devra être proposé dans les collections DiceBear pour être installable directement depuis chaque registre.
 
@@ -25,7 +25,7 @@ Une fois le style accepté dans le catalogue DiceBear, les intégrations pourron
 Prérequis : Node.js 22+.
 
 ```sh
-npm install ./ikonym-0.1.0.tgz
+npm install ikonym
 ```
 
 ```js
@@ -60,7 +60,7 @@ const svg = new Avatar(new Style(definition), {
 Prérequis : PHP 8.2+.
 
 ```sh
-composer require dicebear/core
+composer require dicebear/core numera11y/ikonym
 ```
 
 ```php
@@ -68,8 +68,9 @@ composer require dicebear/core
 
 use DiceBear\Avatar;
 use DiceBear\Style;
+use Numera11y\Ikonym\StyleDefinition;
 
-$style = Style::fromJson(file_get_contents(__DIR__ . '/styles/ikonym-7.json'));
+$style = Style::fromJson(StyleDefinition::json(7));
 $avatar = new Avatar($style, [
     'seed' => 'nacre-lunaire',
     'size' => 128,
