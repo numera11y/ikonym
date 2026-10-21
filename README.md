@@ -16,9 +16,9 @@ Ikonym is distributed under the MIT License. You may use, modify, and sell it. A
 
 ## Integrations
 
-The same JSON style definition works with official DiceBear engines for JavaScript, PHP, Python, Rust, Go, Dart, and C#. This avoids seven separate ports and keeps the same result for a given identifier. See the [installation guide and complete examples](docs/INTEGRATIONS.md). The JavaScript package is published on npm; `numera11y/ikonym` is also available on Packagist for PHP and includes a helper for loading the portable JSON definitions.
+The same JSON style definition works with official DiceBear engines for JavaScript, PHP, Python, Rust, Go, Dart, and C#. This avoids seven separate ports and keeps the same result for a given identifier. See the [installation guide and complete examples](docs/INTEGRATIONS.md). Ikonym is available on npm for JavaScript, Packagist for PHP, and PyPI for Python.
 
-The Python distribution `ikonym` is being prepared for PyPI. It will include the same five JSON definitions and a small Python API for loading styles and generating avatars with DiceBear Core.
+The PyPI distribution includes the same five JSON definitions and a small Python API for loading styles. Install the optional DiceBear renderer with `pip install "ikonym[dicebear]"` to generate SVG avatars.
 
 ## Usage
 
@@ -49,7 +49,7 @@ The demo lets you enter an identifier, choose a mosaic density, round the avatar
 
 ## Python distribution
 
-The PyPI release is being prepared. The distribution includes the same five JSON styles; its optional `dicebear` extra adds SVG rendering. To build a local wheel and source archive:
+The Python distribution includes the same five JSON styles; its optional `dicebear` extra adds SVG rendering. To build a local wheel and source archive:
 
 ```sh
 npm run styles:build
@@ -58,7 +58,7 @@ python -m build --outdir python-dist
 python -m twine check python-dist/*
 ```
 
-After publication, install the renderer with `pip install "ikonym[dicebear]"`. The JSON style loader itself has no runtime dependencies.
+The JSON style loader itself has no runtime dependencies.
 
 ## Build the library and site
 

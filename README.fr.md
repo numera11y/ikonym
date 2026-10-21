@@ -19,9 +19,9 @@ Ikonym est distribué sous licence MIT. Vous pouvez l’utiliser, le modifier et
 
 ## Intégrations multi-langages
 
-Une même définition de style JSON est lue par les moteurs DiceBear officiels pour JavaScript, PHP, Python, Rust, Go, Dart et C#. Cela évite sept ports séparés et conserve le même résultat pour un identifiant donné. Voir le [guide d’installation et les exemples complets](docs/INTEGRATIONS.fr.md). Le package JavaScript est publié sur npm; `numera11y/ikonym` est aussi disponible sur Packagist pour PHP et inclut un helper pour charger les définitions JSON portables.
+Une même définition de style JSON est lue par les moteurs DiceBear officiels pour JavaScript, PHP, Python, Rust, Go, Dart et C#. Cela évite sept ports séparés et conserve le même résultat pour un identifiant donné. Voir le [guide d’installation et les exemples complets](docs/INTEGRATIONS.fr.md). Ikonym est disponible sur npm pour JavaScript, Packagist pour PHP et PyPI pour Python.
 
-La distribution Python `ikonym` est en préparation pour PyPI. Elle inclura les cinq mêmes définitions JSON et une API Python pour charger les styles et générer des avatars avec DiceBear Core.
+La distribution PyPI inclut les cinq mêmes définitions JSON et une API Python pour charger les styles. Installez l’extra optionnel DiceBear avec `pip install "ikonym[dicebear]"` pour générer les avatars SVG.
 
 ## Utilisation
 
@@ -54,7 +54,7 @@ La démo permet de saisir un identifiant, de choisir la densité de mosaïque, d
 
 ## Distribution Python
 
-La publication sur PyPI est en préparation. La distribution inclut les cinq mêmes styles JSON; son extra optionnel `dicebear` ajoute le rendu SVG. Pour construire une roue et une archive source localement :
+La distribution Python inclut les cinq mêmes styles JSON; son extra optionnel `dicebear` ajoute le rendu SVG. Pour construire une roue et une archive source localement :
 
 ```sh
 npm run styles:build
@@ -63,7 +63,7 @@ python -m build --outdir python-dist
 python -m twine check python-dist/*
 ```
 
-Après publication, installez le moteur de rendu avec `pip install "ikonym[dicebear]"`. Le chargement des définitions JSON seul n’a aucune dépendance d’exécution.
+Le chargement des définitions JSON seul n’a aucune dépendance d’exécution.
 
 ## Construire la bibliothèque
 

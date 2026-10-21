@@ -4,7 +4,7 @@ Ikonym provides portable DiceBear JSON style definitions. Official DiceBear engi
 
 ## Current availability
 
-The `ikonym` package is published to npm and the `numera11y/ikonym` package is published on Packagist. The Composer package includes a PHP helper and the portable style definitions. A Python `ikonym` distribution is being prepared for PyPI. This site also offers direct downloads of the npm tarball and JSON styles. Source code and issue tracking are available in the [public GitHub repository](https://github.com/numera11y/ikonym).
+The `ikonym` package is published to npm and PyPI, and `numera11y/ikonym` is published on Packagist. Composer provides a PHP helper; PyPI provides a Python helper. This site also offers direct downloads of the npm tarball and JSON styles. Source code and issue tracking are available in the [public GitHub repository](https://github.com/numera11y/ikonym).
 
 Choose a 3×3, 5×5, 7×7, 9×9, or 12×12 grid for the desired density. After release, the style will still need to be proposed to the DiceBear collections before it can be installed from their registries.
 
@@ -83,7 +83,7 @@ $svg = (string) $avatar;
 
 Requirements: Python 3.10+.
 
-The `ikonym` PyPI distribution is being prepared. It bundles all five JSON style definitions and includes an optional `dicebear` extra for SVG rendering. After release, install the helper with:
+The `ikonym` PyPI distribution bundles all five JSON style definitions and includes an optional `dicebear` extra for SVG rendering:
 
 ```sh
 pip install "ikonym[dicebear]"

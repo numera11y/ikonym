@@ -31,14 +31,10 @@ use Numera11y\\Ikonym\\StyleDefinition;
  $svg = (string) new Avatar($style, ['seed' => 'nacre-lunaire', 'size' => 128]);`,
   },
   Python: {
-    install: 'pip install dicebear-core',
-    code: `import json
-from pathlib import Path
-from dicebear import Avatar, Style
+    install: 'pip install "ikonym[dicebear]"',
+    code: `from ikonym import create_avatar
 
-definition = json.loads(Path('styles/ikonym-7.json').read_text())
-style = Style(definition)
-svg = Avatar(style, {'seed': 'nacre-lunaire', 'size': 128}).to_string()`,
+svg = create_avatar('ikon-satin', density=7, size=128)`,
   },
   Rust: {
     install: 'cargo add dicebear-core serde_json',
