@@ -4,7 +4,7 @@ Ikonym provides portable DiceBear JSON style definitions. Official DiceBear engi
 
 ## Current availability
 
-The `ikonym` package is published to npm and PyPI, and `numera11y/ikonym` is published on Packagist. Composer provides a PHP helper; PyPI provides a Python helper. This site also offers direct downloads of the npm tarball and JSON styles. Source code and issue tracking are available in the [public GitHub repository](https://github.com/numera11y/ikonym).
+The `ikonym` package is published to npm and PyPI, and `numera11y/ikonym` is published on Packagist. Composer provides a PHP helper; PyPI provides a Python helper. A Rust crate is being prepared for crates.io. This site also offers direct downloads of the npm tarball and JSON styles. Source code and issue tracking are available in the [public GitHub repository](https://github.com/numera11y/ikonym).
 
 Choose a 3×3, 5×5, 7×7, 9×9, or 12×12 grid for the desired density. After release, the style will still need to be proposed to the DiceBear collections before it can be installed from their registries.
 
@@ -122,6 +122,8 @@ svg = avatar.to_string()
 
 Requirements: Rust 1.80+.
 
+The `ikonym` crate is being prepared for crates.io. The portable JSON definition can be used directly with DiceBear Core today.
+
 ```sh
 cargo add dicebear-core serde_json
 ```
@@ -142,6 +144,22 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     }))?;
 
     let svg = avatar.to_svg();
+    Ok(())
+}
+```
+
+Once the crate is published, a simpler helper will be available:
+
+```sh
+cargo add ikonym
+```
+
+```rust
+use ikonym::create_avatar;
+
+fn main() -> Result<(), Box<dyn std::error::Error>> {
+    let svg = create_avatar("ikon-satin", 7, 128, 0, None)?;
+    println!("{svg}");
     Ok(())
 }
 ```

@@ -1,0 +1,28 @@
+[package]
+name = "ikonym"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.80"
+description = "Deterministic geometric SVG avatars generated from an identifier."
+license = "MIT"
+homepage = "https://ikonym.numera11y.fr"
+repository = "https://github.com/numera11y/ikonym"
+documentation = "https://docs.rs/ikonym"
+readme = "README.crates.md"
+keywords = ["avatar", "dicebear", "identicon", "svg", "mosaic"]
+categories = ["graphics", "multimedia::images"]
+include = [
+  "/Cargo.toml",
+  "/README.crates.md",
+  "/LICENSE",
+  "/rust/src/*.rs",
+  "/rust/src/**/*.rs",
+  "/styles/ikonym-*.json",
+]
+
+[lib]
+path = "rust/src/lib.rs"
+
+[dependencies]
+dicebear-core = "10.7.0"
+serde_json = "1.0"

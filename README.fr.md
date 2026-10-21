@@ -19,7 +19,7 @@ Ikonym est distribué sous licence MIT. Vous pouvez l’utiliser, le modifier et
 
 ## Intégrations multi-langages
 
-Une même définition de style JSON est lue par les moteurs DiceBear officiels pour JavaScript, PHP, Python, Rust, Go, Dart et C#. Cela évite sept ports séparés et conserve le même résultat pour un identifiant donné. Voir le [guide d’installation et les exemples complets](docs/INTEGRATIONS.fr.md). Ikonym est disponible sur npm pour JavaScript, Packagist pour PHP et PyPI pour Python.
+Une même définition de style JSON est lue par les moteurs DiceBear officiels pour JavaScript, PHP, Python, Rust, Go, Dart et C#. Cela évite sept ports séparés et conserve le même résultat pour un identifiant donné. Voir le [guide d’installation et les exemples complets](docs/INTEGRATIONS.fr.md). Ikonym est disponible sur npm pour JavaScript, Packagist pour PHP et PyPI pour Python; un crate Rust est en préparation pour crates.io.
 
 La distribution PyPI inclut les cinq mêmes définitions JSON et une API Python pour charger les styles. Installez l’extra optionnel DiceBear avec `pip install "ikonym[dicebear]"` pour générer les avatars SVG.
 
@@ -64,6 +64,16 @@ python -m twine check python-dist/*
 ```
 
 Le chargement des définitions JSON seul n’a aucune dépendance d’exécution.
+
+## Crate Rust
+
+Le crate Rust est en préparation pour crates.io. Vérifiez son formatage, ses tests et les fichiers du package avec :
+
+```sh
+cargo fmt --all -- --check
+cargo test --all-targets
+cargo package --list
+```
 
 ## Construire la bibliothèque
 
