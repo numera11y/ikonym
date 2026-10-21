@@ -4,7 +4,7 @@ Ikonym provides portable DiceBear JSON style definitions. Official DiceBear engi
 
 ## Current availability
 
-The `ikonym` package is published to npm, PyPI, and crates.io; `numera11y/ikonym` is published on Packagist. Composer provides a PHP helper, and the Python and Rust packages provide avatar-generation helpers. This site also offers direct downloads of the npm tarball and JSON styles. Source code and issue tracking are available in the [public GitHub repository](https://github.com/numera11y/ikonym).
+The `ikonym` package is published to npm, PyPI, and crates.io; `numera11y/ikonym` is published on Packagist. The Go module is available at `github.com/numera11y/ikonym` (v0.2.0), alongside the Python and Rust helper libraries. This site also offers direct downloads of the npm tarball and JSON styles. Source code and issue tracking are available in the [public GitHub repository](https://github.com/numera11y/ikonym).
 
 Choose a 3×3, 5×5, 7×7, 9×9, or 12×12 grid for the desired density. After release, the style will still need to be proposed to the DiceBear collections before it can be installed from their registries.
 
@@ -138,53 +138,26 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 }
 ```
 
-Once the crate is published, a simpler helper will be available:
-
-```sh
-cargo add ikonym
-```
-
-```rust
-use ikonym::create_avatar;
-
-fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let svg = create_avatar("ikon-satin", 7, 128, 0, None)?;
-    println!("{svg}");
-    Ok(())
-}
-```
-
 ## Go
 
 Requirements: Go 1.23+.
 
 ```sh
-go get github.com/dicebear/dicebear-go/v10
+go get github.com/numera11y/ikonym@v0.2.0
 ```
 
 ```go
 package main
 
 import (
-    "os"
-    dicebear "github.com/dicebear/dicebear-go/v10"
+    "fmt"
+    "github.com/numera11y/ikonym"
 )
 
 func main() {
-    definition, err := os.ReadFile("styles/ikonym-7.json")
+    svg, err := ikonym.CreateAvatar("ikon-satin", 7, 128, 0, "Alice’s avatar")
     if err != nil { panic(err) }
-    style, err := dicebear.NewStyle(definition)
-    if err != nil { panic(err) }
-    avatar, err := dicebear.NewAvatar(style, map[string]any{
-        "seed": "ikon-satin",
-        "size": 128,
-        "borderRadius": 0,
-        "title": "Alice’s avatar",
-    })
-    if err != nil { panic(err) }
-
-    svg := avatar.SVG()
-    _ = svg
+    fmt.Println(svg)
 }
 ```
 

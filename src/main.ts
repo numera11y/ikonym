@@ -47,20 +47,18 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 }`,
   },
   Go: {
-    install: 'go get github.com/dicebear/dicebear-go/v10',
+    install: 'go get github.com/numera11y/ikonym@v0.2.0',
     code: `package main
 
 import (
     "fmt"
-    "os"
-    dicebear "github.com/dicebear/dicebear-go/v10"
+    "github.com/numera11y/ikonym"
 )
 
 func main() {
-    definition, _ := os.ReadFile("styles/ikonym-7.json")
-    style, _ := dicebear.NewStyle(definition)
-    avatar, _ := dicebear.NewAvatar(style, map[string]any{"seed": "nacre-lunaire", "size": 128})
-    fmt.Println(avatar.SVG())
+    svg, err := ikonym.CreateAvatar("nacre-lunaire", 7, 128, 0, "")
+    if err != nil { panic(err) }
+    fmt.Println(svg)
 }`,
   },
   Dart: {

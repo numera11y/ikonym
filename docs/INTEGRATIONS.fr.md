@@ -4,7 +4,7 @@ Ikonym fournit des définitions DiceBear portables en JSON. Les bibliothèques D
 
 ## Disponibilité actuelle
 
-Le paquet `ikonym` est publié sur npm, PyPI et crates.io, et `numera11y/ikonym` est disponible sur Packagist. Composer fournit un helper PHP; Python et Rust fournissent des helpers de génération. Le site propose aussi le tarball npm et le téléchargement direct des styles. Le [dépôt GitHub public](https://github.com/numera11y/ikonym) héberge le code source et le suivi des problèmes.
+Le paquet `ikonym` est publié sur npm, PyPI et crates.io, et `numera11y/ikonym` est disponible sur Packagist. Le module Go est disponible à l’adresse `github.com/numera11y/ikonym` (v0.2.0), ainsi que les bibliothèques Python et Rust. Le site propose aussi le tarball npm et le téléchargement direct des styles. Le [dépôt GitHub public](https://github.com/numera11y/ikonym) héberge le code source et le suivi des problèmes.
 
 Télécharge le fichier de style depuis le site ou récupère-le dans `styles/` après avoir cloné le dépôt. Choisis une grille de 3×3, 5×5, 7×7, 9×9 ou 12×12 selon la densité voulue. Après publication, le style devra être proposé dans les collections DiceBear pour être installable directement depuis chaque registre.
 
@@ -140,54 +140,27 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 }
 ```
 
-Après publication du crate, un helper simplifié sera disponible :
-
-```sh
-cargo add ikonym
-```
-
-```rust
-use ikonym::create_avatar;
-
-fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let svg = create_avatar("ikon-satin", 7, 128, 0, None)?;
-    println!("{svg}");
-    Ok(())
-}
-```
-
 ## Go
 
 Prérequis : Go 1.23+.
 
 ```sh
-go get github.com/dicebear/dicebear-go/v10
+go get github.com/numera11y/ikonym@v0.2.0
 ```
 
 ```go
 package main
 
 import (
-	"os"
+	"fmt"
 
-	dicebear "github.com/dicebear/dicebear-go/v10"
+	"github.com/numera11y/ikonym"
 )
 
 func main() {
-  definition, err := os.ReadFile("styles/ikonym-7.json")
+	svg, err := ikonym.CreateAvatar("nacre-lunaire", 7, 128, 0, "Avatar d’Alice")
 	if err != nil { panic(err) }
-	style, err := dicebear.NewStyle(definition)
-	if err != nil { panic(err) }
-	avatar, err := dicebear.NewAvatar(style, map[string]any{
-		"seed": "nacre-lunaire",
-		"size": 128,
-		"borderRadius": 0,
-		"title": "Avatar d’Alice",
-	})
-	if err != nil { panic(err) }
-
-	svg := avatar.SVG()
-	_ = svg
+	fmt.Println(svg)
 }
 ```
 
