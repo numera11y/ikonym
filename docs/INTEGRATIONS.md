@@ -4,7 +4,7 @@ Ikonym provides portable DiceBear JSON style definitions. Official DiceBear engi
 
 ## Current availability
 
-The `ikonym` package is published to npm, PyPI, crates.io, and pub.dev; `numera11y/ikonym` is published on Packagist. The Go module is available at `github.com/numera11y/ikonym` (v0.2.0), alongside the Python and Rust helper libraries. This site also offers direct downloads of the npm tarball and JSON styles. Source code and issue tracking are available in the [public GitHub repository](https://github.com/numera11y/ikonym).
+The `ikonym` package is published to npm, PyPI, and crates.io, and is available on pub.dev; `numera11y/ikonym` is published on Packagist. The Go module is available at `github.com/numera11y/ikonym` (v0.2.0), alongside the Python and Rust helper libraries. The .NET package is built and ready for trusted publishing through GitHub Actions. This site also offers direct downloads of the npm tarball and JSON styles. Source code and issue tracking are available in the [public GitHub repository](https://github.com/numera11y/ikonym).
 
 Choose a 3×3, 5×5, 7×7, 9×9, or 12×12 grid for the desired density. After release, the style will still need to be proposed to the DiceBear collections before it can be installed from their registries.
 
@@ -187,26 +187,21 @@ void main() {
 
 Requirements: .NET 8+.
 
+The `Ikonym` NuGet package is prepared. Its first publication will run through the repository's trusted GitHub Actions publisher; after it is published, install it with:
+
 ```sh
-dotnet add package DiceBear.Core
+dotnet add package Ikonym
 ```
 
 ```csharp
-using System.IO;
-using System.Text.Json.Nodes;
-using DiceBear;
+using Ikonym;
 
-var definition = File.ReadAllText("styles/ikonym-7.json");
-var style = Style.Parse(definition);
-var avatar = new Avatar(style, new JsonObject
-{
-    ["seed"] = "ikon-satin",
-    ["size"] = 128,
-    ["borderRadius"] = 0,
-    ["title"] = "Alice’s avatar",
-});
-
-var svg = avatar.ToSvg();
+var svg = AvatarGenerator.CreateAvatar(
+    "ikon-satin",
+    density: 7,
+    size: 128,
+    title: "Alice’s avatar");
+Console.WriteLine(svg);
 ```
 
 ## Useful options

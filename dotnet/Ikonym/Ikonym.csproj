@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PackageId>Ikonym</PackageId>
+    <Version>0.1.0</Version>
+    <Authors>Numera11y</Authors>
+    <Description>Deterministic geometric SVG avatars generated from a stable identifier.</Description>
+    <PackageTags>avatar;dicebear;identicon;mosaic;svg</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://ikonym.numera11y.fr</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/numera11y/ikonym</RepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DiceBear.Core" Version="10.7.0" />
+    <None Include="README.md" Pack="true" PackagePath="\" />
+    <EmbeddedResource Include="../../styles/ikonym-*.json">
+      <Link>Styles/%(Filename)%(Extension)</Link>
+      <LogicalName>Ikonym.Styles.%(Filename)%(Extension)</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

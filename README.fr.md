@@ -9,7 +9,7 @@ Chaque identifiant compose une mosaïque de formes inspirées des coquillages : 
 
 Deux carreaux voisins par un côté n’utilisent jamais la même famille de motifs, même si leur couleur ou leur orientation diffère.
 
-Le paquet `ikonym` est publié sur npm, PyPI, crates.io et pub.dev, ainsi que comme module Go; `numera11y/ikonym` est également disponible sur Packagist. Le site propose le tarball de la version courante et les définitions JSON pour les moteurs DiceBear compatibles.
+Le paquet `ikonym` est publié sur npm, PyPI, crates.io et pub.dev, ainsi que comme module Go; `numera11y/ikonym` est également disponible sur Packagist. Le package .NET est prêt pour une publication NuGet de confiance.
 
 Ikonym est développé par [Numera11y](https://www.numera11y.fr/) et sera présenté dans son catalogue d’outils numériques. [Consultez le code source, signalez un problème ou contribuez sur GitHub](https://github.com/numera11y/ikonym).
 

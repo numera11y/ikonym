@@ -71,15 +71,10 @@ void main() {
 }`,
   },
   'C#': {
-    install: 'dotnet add package DiceBear.Core',
-    code: `using System.IO;
-using System.Text.Json.Nodes;
-using DiceBear;
+    install: 'dotnet add package Ikonym',
+    code: `using Ikonym;
 
-var definition = File.ReadAllText("styles/ikonym-7.json");
-var style = Style.Parse(definition);
-var avatar = new Avatar(style, new JsonObject { ["seed"] = "nacre-lunaire", ["size"] = 128 });
-var svg = avatar.ToSvg();
+var svg = AvatarGenerator.CreateAvatar("nacre-lunaire", density: 7, size: 128);
 Console.WriteLine(svg);`,
   },
 };

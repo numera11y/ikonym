@@ -6,7 +6,7 @@ Ikonym is an open-source library for generating deterministic SVG avatars and in
 
 Each identifier selects a vivid, seamless geometric mosaic: shell fans, concentric arcs, curved growth bands, and faceted plates mix tile by tile. Neighboring tiles never repeat the same motif family along an edge, regardless of color or orientation. The same identifier and options always produce the same avatar.
 
-The `ikonym` package is published on npm, PyPI, crates.io, and pub.dev, and as a Go module; `numera11y/ikonym` is also available on Packagist. This site offers a direct tarball download and JSON definitions for compatible DiceBear engines.
+The `ikonym` package is published on npm, PyPI, crates.io, and pub.dev, and as a Go module; `numera11y/ikonym` is also available on Packagist. The .NET package is prepared for NuGet trusted publishing.
 
 Ikonym is developed by [Numera11y](https://www.numera11y.fr/) and will be featured in its digital-tools catalog. [Browse the source code, report issues, or contribute on GitHub](https://github.com/numera11y/ikonym).
 
@@ -68,6 +68,20 @@ The `ikonym` crate is published on crates.io. Check formatting, tests, and the p
 cargo fmt --all -- --check
 cargo test --all-targets
 cargo package --list
+```
+
+## .NET package
+
+The `Ikonym` NuGet package is ready for publication through the trusted GitHub Actions workflow. Once published, install it and render an avatar:
+
+```sh
+dotnet add package Ikonym
+```
+
+```csharp
+using Ikonym;
+
+var svg = AvatarGenerator.CreateAvatar("account-4821", density: 7, size: 128);
 ```
 
 ## Build the library and site
