@@ -1,0 +1,5072 @@
+{
+  "$schema": "https://cdn.hopjs.net/npm/@dicebear/schema@1.0.0/dist/definition.min.json",
+  "meta": {
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/license/mit/"
+    },
+    "creator": {
+      "name": "Ikonym"
+    }
+  },
+  "canvas": {
+    "width": 100,
+    "height": 100,
+    "elements": [
+      {
+        "type": "component",
+        "name": "composition"
+      }
+    ]
+  },
+  "components": {
+    "composition": {
+      "width": 100,
+      "height": 100,
+      "variants": {
+        "tilePattern1": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 0 H33.333 V33.333 H0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 33.333 H66.667 V66.667 H33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cyan"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 0 H66.667 V33.333 H33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 33.333 H100 V66.667 H66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "orange"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 0 H100 V33.333 H66.667 Z M66.667 66.667 H100 V100 H66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 33.333 H33.333 V66.667 H0 Z M0 66.667 H33.333 V100 H0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 66.667 H66.667 V100 H33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M16.666 33.333 L0 0 L11.111 0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M16.666 33.333 L11.111 0 L22.222 0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cyan"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M16.666 33.333 L22.222 0 L33.333 0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M83.334 0 A16.666 16.666 0 0 1 83.334 33.333 L83.334 0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M83.334 6 A10.667 10.667 0 0 1 83.334 27.333 L83.334 6 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 74.778 Q50 71.778 66.667 74.778 L66.667 80.778 Q50 83.778 33.333 80.778 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 85.889 Q50 82.889 66.667 85.889 L66.667 91.889 Q50 94.889 33.333 91.889 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M52.556 0 Q49.556 16.666 52.556 33.333 L58.556 33.333 Q61.556 16.666 58.556 0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cyan"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M41.444 0 Q38.444 16.666 41.444 33.333 L47.444 33.333 Q50.444 16.666 47.444 0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 52.556 Q83.334 49.556 100 52.556 L100 58.556 Q83.334 61.556 66.667 58.556 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "orange"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 41.444 Q83.334 38.444 100 41.444 L100 47.444 Q83.334 50.444 66.667 47.444 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M19.222 33.333 Q16.222 50 19.222 66.667 L25.222 66.667 Q28.222 50 25.222 33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M8.111 33.333 Q5.111 50 8.111 66.667 L14.111 66.667 Q17.111 50 14.111 33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 100 L0 100 L16.666 83.334 Z M66.667 66.667 L100 66.667 L83.334 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 66.667 L33.333 66.667 L16.666 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cyan"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 33.333 L66.667 66.667 L50 50 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 66.667 L33.333 66.667 L50 50 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "orange"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M100 66.667 L100 100 L83.334 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 33.333 L66.667 33.333 L50 50 Z M100 100 L66.667 100 L83.334 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 66.667 L33.333 100 L16.666 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            }
+          ]
+        },
+        "tilePattern2": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 0 H100 V33.333 H66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 33.333 H66.667 V66.667 H33.333 Z M0 66.667 H33.333 V100 H0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 33.333 H33.333 V66.667 H0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cyan"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 0 H33.333 V33.333 H0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 66.667 H66.667 V100 H33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "orange"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 0 H66.667 V33.333 H33.333 Z M66.667 66.667 H100 V100 H66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 33.333 H100 V66.667 H66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M100 50 L66.667 44.444 L66.667 55.556 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M100 50 L66.667 55.556 L66.667 66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 83.334 L33.333 66.667 L33.333 77.778 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 83.334 L33.333 77.778 L33.333 88.889 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "orange"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 83.334 L33.333 88.889 L33.333 100 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M100 50 L66.667 33.333 L66.667 44.444 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M16.666 33.333 A16.666 16.666 0 0 1 16.666 66.667 L16.666 33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cyan"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M16.666 39.333 A10.667 10.667 0 0 1 16.666 60.667 L16.666 39.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M83.334 0 A16.666 16.666 0 0 0 83.334 33.333 L83.334 0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M83.334 6 A10.667 10.667 0 0 0 83.334 27.333 L83.334 6 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 8.111 Q50 5.111 66.667 8.111 L66.667 14.111 Q50 17.111 33.333 14.111 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 85.889 Q16.666 82.889 33.333 85.889 L33.333 91.889 Q16.666 94.889 0 91.889 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 19.222 Q50 16.222 66.667 19.222 L66.667 25.222 Q50 28.222 33.333 25.222 Z M0 74.778 Q16.666 71.778 33.333 74.778 L33.333 80.778 Q16.666 83.778 0 80.778 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 66.667 L33.333 33.333 L50 50 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 0 L33.333 0 L16.666 16.666 Z M33.333 33.333 L66.667 33.333 L50 50 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 100 L66.667 66.667 L83.334 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cyan"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 66.667 L33.333 66.667 L50 50 Z M66.667 66.667 L100 66.667 L83.334 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M100 100 L66.667 100 L83.334 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 0 L33.333 33.333 L16.666 16.666 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 33.333 L0 33.333 L16.666 16.666 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            }
+          ]
+        },
+        "tilePattern3": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 0 H33.333 V33.333 H0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 0 H66.667 V33.333 H33.333 Z M0 33.333 H33.333 V66.667 H0 Z M33.333 66.667 H66.667 V100 H33.333 Z M66.667 66.667 H100 V100 H66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cyan"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 0 H100 V33.333 H66.667 Z M33.333 33.333 H66.667 V66.667 H33.333 Z M66.667 33.333 H100 V66.667 H66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 66.667 H33.333 V100 H0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "orange"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M83.334 100 L77.778 66.667 L88.889 66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M83.334 100 L88.889 66.667 L100 66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 50 L66.667 33.333 L66.667 44.444 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 50 L66.667 44.444 L66.667 55.556 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 50 L66.667 55.556 L66.667 66.667 Z M83.334 100 L66.667 66.667 L77.778 66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M16.666 39.333 A10.667 10.667 0 0 0 16.666 60.667 L16.666 39.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 83.334 A16.666 16.666 0 0 0 66.667 83.334 L33.333 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M39.333 83.334 A10.667 10.667 0 0 0 60.667 83.334 L39.333 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cyan"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 16.666 A16.666 16.666 0 0 0 66.667 16.666 L33.333 16.666 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M39.333 16.666 A10.667 10.667 0 0 0 60.667 16.666 L39.333 16.666 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "orange"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M16.666 33.333 A16.666 16.666 0 0 0 16.666 66.667 L16.666 33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 74.778 Q16.666 71.778 33.333 74.778 L33.333 80.778 Q16.666 83.778 0 80.778 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 85.889 Q16.666 82.889 33.333 85.889 L33.333 91.889 Q16.666 94.889 0 91.889 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "orange"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M74.778 33.333 Q71.778 50 74.778 66.667 L80.778 66.667 Q83.778 50 80.778 33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M85.889 33.333 Q82.889 50 85.889 66.667 L91.889 66.667 Q94.889 50 91.889 33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M100 33.333 L66.667 33.333 L83.334 16.666 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 33.333 L66.667 0 L83.334 16.666 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cyan"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 33.333 L0 0 L16.666 16.666 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 0 L33.333 0 L16.666 16.666 Z M100 0 L100 33.333 L83.334 16.666 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "orange"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 33.333 L0 33.333 L16.666 16.666 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            }
+          ]
+        },
+        "tilePattern4": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 66.667 H33.333 V100 H0 Z M66.667 66.667 H100 V100 H66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 0 H66.667 V33.333 H33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 33.333 H33.333 V66.667 H0 Z M33.333 66.667 H66.667 V100 H33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cyan"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 0 H100 V33.333 H66.667 Z M66.667 33.333 H100 V66.667 H66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 0 H33.333 V33.333 H0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 33.333 H66.667 V66.667 H33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 16.666 L0 0 L0 11.111 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 16.666 L0 11.111 L0 22.222 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 16.666 L0 22.222 L0 33.333 Z M50 66.667 L33.333 33.333 L44.444 33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cyan"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M50 66.667 L44.444 33.333 L55.556 33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M50 66.667 L55.556 33.333 L66.667 33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "orange"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 50 A16.666 16.666 0 0 0 100 50 L66.667 50 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cyan"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M72.667 50 A10.667 10.667 0 0 0 94 50 L72.667 50 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 19.222 Q83.334 16.222 100 19.222 L100 25.222 Q83.334 28.222 66.667 25.222 Z M33.333 85.889 Q50 82.889 66.667 85.889 L66.667 91.889 Q50 94.889 33.333 91.889 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 8.111 Q83.334 5.111 100 8.111 L100 14.111 Q83.334 17.111 66.667 14.111 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M19.222 33.333 Q16.222 50 19.222 66.667 L25.222 66.667 Q28.222 50 25.222 33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M8.111 33.333 Q5.111 50 8.111 66.667 L14.111 66.667 Q17.111 50 14.111 33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 74.778 Q50 71.778 66.667 74.778 L66.667 80.778 Q50 83.778 33.333 80.778 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 33.333 L33.333 0 L50 16.666 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 100 L0 100 L16.666 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 0 L66.667 33.333 L50 16.666 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cyan"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M100 100 L66.667 100 L83.334 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "orange"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 100 L66.667 66.667 L83.334 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 100 L0 66.667 L16.666 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 33.333 L33.333 33.333 L50 16.666 Z M0 66.667 L33.333 66.667 L16.666 83.334 Z M100 66.667 L100 100 L83.334 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            }
+          ]
+        },
+        "tilePattern5": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 0 H66.667 V33.333 H33.333 Z M66.667 66.667 H100 V100 H66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 0 H33.333 V33.333 H0 Z M33.333 33.333 H66.667 V66.667 H33.333 Z M33.333 66.667 H66.667 V100 H33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 0 H100 V33.333 H66.667 Z M0 33.333 H33.333 V66.667 H0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 66.667 H33.333 V100 H0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "orange"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 33.333 H100 V66.667 H66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 83.334 L33.333 66.667 L33.333 77.778 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 83.334 L33.333 77.778 L33.333 88.889 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "orange"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M16.666 33.333 L0 0 L11.111 0 Z M0 83.334 L33.333 88.889 L33.333 100 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M16.666 33.333 L11.111 0 L22.222 0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M16.666 33.333 L22.222 0 L33.333 0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 50 A16.667 16.667 0 0 0 66.667 50 L33.333 50 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M39.333 50 A10.667 10.667 0 0 0 60.667 50 L39.333 50 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M83.334 0 A16.666 16.666 0 0 0 83.334 33.333 L83.334 0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "orange"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M83.334 6 A10.667 10.667 0 0 0 83.334 27.333 L83.334 6 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M74.778 33.333 Q71.778 50 74.778 66.667 L80.778 66.667 Q83.778 50 80.778 33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M85.889 33.333 Q82.889 50 85.889 66.667 L91.889 66.667 Q94.889 50 91.889 33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 74.778 Q50 71.778 66.667 74.778 L66.667 80.778 Q50 83.778 33.333 80.778 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "orange"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 85.889 Q50 82.889 66.667 85.889 L66.667 91.889 Q50 94.889 33.333 91.889 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 19.222 Q50 16.222 66.667 19.222 L66.667 25.222 Q50 28.222 33.333 25.222 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 8.111 Q50 5.111 66.667 8.111 L66.667 14.111 Q50 17.111 33.333 14.111 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 33.333 L33.333 66.667 L16.666 50 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 66.667 L0 66.667 L16.666 50 Z M100 100 L66.667 100 L83.334 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 100 L66.667 66.667 L83.334 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cyan"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 33.333 L33.333 33.333 L16.666 50 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M100 66.667 L100 100 L83.334 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "orange"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            }
+          ]
+        },
+        "tilePattern6": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 0 H100 V33.333 H66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 0 H33.333 V33.333 H0 Z M0 66.667 H33.333 V100 H0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 33.333 H66.667 V66.667 H33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 33.333 H33.333 V66.667 H0 Z M33.333 66.667 H66.667 V100 H33.333 Z M66.667 66.667 H100 V100 H66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 0 H66.667 V33.333 H33.333 Z M66.667 33.333 H100 V66.667 H66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M50 100 L44.444 66.667 L55.556 66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M50 100 L55.556 66.667 L66.667 66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M83.334 33.333 L66.667 66.667 L77.778 66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M83.334 33.333 L77.778 66.667 L88.889 66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "orange"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M83.334 33.333 L88.889 66.667 L100 66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M50 100 L33.333 66.667 L44.444 66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M72.667 83.334 A10.667 10.667 0 0 1 94 83.334 L72.667 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 16.666 A16.666 16.666 0 0 1 66.667 16.666 L33.333 16.666 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cyan"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M39.333 16.666 A10.667 10.667 0 0 1 60.667 16.666 L39.333 16.666 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 50 A16.666 16.666 0 0 0 33.333 50 L0 50 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M6 50 A10.667 10.667 0 0 0 27.333 50 L6 50 Z M66.667 83.334 A16.666 16.666 0 0 1 100 83.334 L66.667 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 19.222 Q83.334 16.222 100 19.222 L100 25.222 Q83.334 28.222 66.667 25.222 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cyan"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 8.111 Q83.334 5.111 100 8.111 L100 14.111 Q83.334 17.111 66.667 14.111 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M41.444 33.333 Q38.444 50 41.444 66.667 L47.444 66.667 Q50.444 50 47.444 33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M52.556 33.333 Q49.556 50 52.556 66.667 L58.556 66.667 Q61.556 50 58.556 33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 66.667 L33.333 100 L16.666 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 100 L0 100 L16.666 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 33.333 L0 33.333 L16.666 16.666 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cyan"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 33.333 L0 0 L16.666 16.666 Z M0 66.667 L33.333 66.667 L16.666 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 0 L33.333 33.333 L16.666 16.666 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            }
+          ]
+        },
+        "tilePattern7": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 0 H33.333 V33.333 H0 Z M66.667 66.667 H100 V100 H66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 0 H66.667 V33.333 H33.333 Z M33.333 33.333 H66.667 V66.667 H33.333 Z M0 66.667 H33.333 V100 H0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 33.333 H33.333 V66.667 H0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cyan"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 66.667 H66.667 V100 H33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "orange"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 0 H100 V33.333 H66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 33.333 H100 V66.667 H66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 16.666 L66.667 22.222 L66.667 33.333 Z M100 50 L66.667 33.333 L66.667 44.444 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M100 50 L66.667 44.444 L66.667 55.556 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M100 50 L66.667 55.556 L66.667 66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cyan"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 16.666 L66.667 0 L66.667 11.111 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 16.666 L66.667 11.111 L66.667 22.222 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 16.666 A16.666 16.666 0 0 1 33.333 16.666 L0 16.666 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M6 16.666 A10.667 10.667 0 0 1 27.333 16.666 L6 16.666 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 50 A16.667 16.667 0 0 1 66.667 50 L33.333 50 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cyan"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M39.333 50 A10.667 10.667 0 0 1 60.667 50 L39.333 50 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 83.334 A16.666 16.666 0 0 1 100 83.334 L66.667 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "orange"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M72.667 83.334 A10.667 10.667 0 0 1 94 83.334 L72.667 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M16.666 66.667 A16.666 16.666 0 0 0 16.666 100 L16.666 66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M16.666 72.667 A10.667 10.667 0 0 0 16.666 94 L16.666 72.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 74.778 Q50 71.778 66.667 74.778 L66.667 80.778 Q50 83.778 33.333 80.778 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 85.889 Q50 82.889 66.667 85.889 L66.667 91.889 Q50 94.889 33.333 91.889 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 33.333 L66.667 0 L83.334 16.666 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 33.333 L33.333 66.667 L16.666 50 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cyan"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 66.667 L0 66.667 L16.666 50 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 0 L100 0 L83.334 16.666 Z M0 33.333 L33.333 33.333 L16.666 50 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M100 0 L100 33.333 L83.334 16.666 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            }
+          ]
+        },
+        "tilePattern8": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 0 H33.333 V33.333 H0 Z M33.333 0 H66.667 V33.333 H33.333 Z M33.333 66.667 H66.667 V100 H33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 0 H100 V33.333 H66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cyan"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 66.667 H100 V100 H66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 33.333 H33.333 V66.667 H0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "orange"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 33.333 H100 V66.667 H66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 66.667 H33.333 V100 H0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 33.333 H66.667 V66.667 H33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 83.334 L66.667 66.667 L66.667 77.778 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 83.334 L66.667 77.778 L66.667 88.889 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cyan"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M50 33.333 L33.333 0 L44.444 0 Z M33.333 83.334 L66.667 88.889 L66.667 100 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M50 33.333 L44.444 0 L55.556 0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "orange"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M50 33.333 L55.556 0 L66.667 0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 16.666 A16.666 16.666 0 0 1 33.333 16.666 L0 16.666 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M6 16.666 A10.667 10.667 0 0 1 27.333 16.666 L6 16.666 Z M66.667 50 A16.666 16.666 0 0 1 100 50 L66.667 50 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M72.667 50 A10.667 10.667 0 0 1 94 50 L72.667 50 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M8.111 33.333 Q5.111 50 8.111 66.667 L14.111 66.667 Q17.111 50 14.111 33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M19.222 33.333 Q16.222 50 19.222 66.667 L25.222 66.667 Q28.222 50 25.222 33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cyan"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M100 66.667 L100 100 L83.334 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 66.667 L33.333 66.667 L50 50 Z M100 100 L66.667 100 L83.334 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M100 33.333 L66.667 33.333 L83.334 16.666 Z M33.333 100 L0 100 L16.666 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cyan"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 33.333 L66.667 0 L83.334 16.666 Z M0 100 L0 66.667 L16.666 83.334 Z M66.667 66.667 L100 66.667 L83.334 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M100 0 L100 33.333 L83.334 16.666 Z M33.333 66.667 L33.333 100 L16.666 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 66.667 L33.333 33.333 L50 50 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 33.333 L66.667 33.333 L50 50 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            }
+          ]
+        },
+        "tilePattern9": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 0 H33.333 V33.333 H0 Z M66.667 33.333 H100 V66.667 H66.667 Z M0 66.667 H33.333 V100 H0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 0 H66.667 V33.333 H33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cyan"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 33.333 H33.333 V66.667 H0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 0 H100 V33.333 H66.667 Z M33.333 33.333 H66.667 V66.667 H33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 66.667 H66.667 V100 H33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 66.667 H100 V100 H66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 16.666 L100 11.111 L100 22.222 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 16.666 L100 22.222 L100 33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M50 66.667 L33.333 33.333 L44.444 33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M50 66.667 L44.444 33.333 L55.556 33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "orange"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M50 66.667 L55.556 33.333 L66.667 33.333 Z M83.334 66.667 L66.667 100 L77.778 100 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M83.334 66.667 L77.778 100 L88.889 100 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 16.666 L100 0 L100 11.111 Z M83.334 66.667 L88.889 100 L100 100 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M16.666 0 A16.666 16.666 0 0 1 16.666 33.333 L16.666 0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cyan"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M16.666 6 A10.667 10.667 0 0 1 16.666 27.333 L16.666 6 Z M83.334 33.333 A16.666 16.666 0 0 0 83.334 66.667 L83.334 33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M83.334 39.333 A10.667 10.667 0 0 0 83.334 60.667 L83.334 39.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "orange"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 74.778 Q16.666 71.778 33.333 74.778 L33.333 80.778 Q16.666 83.778 0 80.778 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 85.889 Q16.666 82.889 33.333 85.889 L33.333 91.889 Q16.666 94.889 0 91.889 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cyan"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 33.333 L33.333 33.333 L50 16.666 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 33.333 L33.333 0 L50 16.666 Z M33.333 100 L33.333 66.667 L50 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 0 L66.667 33.333 L50 16.666 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 66.667 L0 66.667 L16.666 50 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "orange"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 66.667 L0 33.333 L16.666 50 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 66.667 L66.667 66.667 L50 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 33.333 L33.333 66.667 L16.666 50 Z M66.667 66.667 L66.667 100 L50 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            }
+          ]
+        },
+        "tilePattern10": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 0 H33.333 V33.333 H0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 66.667 H33.333 V100 H0 Z M66.667 66.667 H100 V100 H66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cyan"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 33.333 H66.667 V66.667 H33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 0 H66.667 V33.333 H33.333 Z M66.667 0 H100 V33.333 H66.667 Z M0 33.333 H33.333 V66.667 H0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "orange"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 33.333 H100 V66.667 H66.667 Z M33.333 66.667 H66.667 V100 H33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M16.666 66.667 L0 33.333 L11.111 33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M16.666 66.667 L11.111 33.333 L22.222 33.333 Z M83.334 66.667 L66.667 100 L77.778 100 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cyan"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M16.666 66.667 L22.222 33.333 L33.333 33.333 Z M83.334 66.667 L77.778 100 L88.889 100 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M83.334 66.667 L88.889 100 L100 100 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "orange"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 16.666 L66.667 0 L66.667 11.111 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 16.666 L66.667 11.111 L66.667 22.222 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 16.666 L66.667 22.222 L66.667 33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M16.666 6 A10.667 10.667 0 0 1 16.666 27.333 L16.666 6 Z M83.334 33.333 A16.666 16.666 0 0 0 83.334 66.667 L83.334 33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M83.334 39.333 A10.667 10.667 0 0 0 83.334 60.667 L83.334 39.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 83.334 A16.666 16.666 0 0 1 66.667 83.334 L33.333 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "orange"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M39.333 83.334 A10.667 10.667 0 0 1 60.667 83.334 L39.333 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M16.666 0 A16.666 16.666 0 0 1 16.666 33.333 L16.666 0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 19.222 Q83.334 16.222 100 19.222 L100 25.222 Q83.334 28.222 66.667 25.222 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 8.111 Q83.334 5.111 100 8.111 L100 14.111 Q83.334 17.111 66.667 14.111 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 33.333 L66.667 33.333 L50 50 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 33.333 L66.667 66.667 L50 50 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 66.667 L33.333 33.333 L50 50 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 66.667 L33.333 100 L16.666 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "orange"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 100 L0 100 L16.666 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 66.667 L33.333 66.667 L16.666 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            }
+          ]
+        },
+        "tilePattern11": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 0 H66.667 V33.333 H33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 66.667 H66.667 V100 H33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cyan"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 0 H33.333 V33.333 H0 Z M66.667 66.667 H100 V100 H66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 33.333 H33.333 V66.667 H0 Z M33.333 33.333 H66.667 V66.667 H33.333 Z M66.667 33.333 H100 V66.667 H66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 0 H100 V33.333 H66.667 Z M0 66.667 H33.333 V100 H0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M16.666 66.667 L22.222 33.333 L33.333 33.333 Z M50 100 L33.333 66.667 L44.444 66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M50 100 L44.444 66.667 L55.556 66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M50 33.333 L33.333 0 L44.444 0 Z M50 100 L55.556 66.667 L66.667 66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cyan"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M50 33.333 L44.444 0 L55.556 0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M50 33.333 L55.556 0 L66.667 0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "orange"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M16.666 66.667 L0 33.333 L11.111 33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M16.666 66.667 L11.111 33.333 L22.222 33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M83.334 66.667 A16.666 16.666 0 0 0 83.334 100 L83.334 66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M83.334 72.667 A10.667 10.667 0 0 0 83.334 94 L83.334 72.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M83.334 0 A16.666 16.666 0 0 0 83.334 33.333 L83.334 0 Z M16.666 66.667 A16.666 16.666 0 0 0 16.666 100 L16.666 66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cyan"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M83.334 6 A10.667 10.667 0 0 0 83.334 27.333 L83.334 6 Z M16.666 72.667 A10.667 10.667 0 0 0 16.666 94 L16.666 72.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 8.111 Q16.666 5.111 33.333 8.111 L33.333 14.111 Q16.666 17.111 0 14.111 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 19.222 Q16.666 16.222 33.333 19.222 L33.333 25.222 Q16.666 28.222 0 25.222 Z M85.889 33.333 Q82.889 50 85.889 66.667 L91.889 66.667 Q94.889 50 91.889 33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M74.778 33.333 Q71.778 50 74.778 66.667 L80.778 66.667 Q83.778 50 80.778 33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 33.333 L66.667 66.667 L50 50 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 66.667 L33.333 66.667 L50 50 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 66.667 L33.333 33.333 L50 50 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            }
+          ]
+        },
+        "tilePattern12": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 0 H66.667 V33.333 H33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 0 H100 V33.333 H66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 66.667 H33.333 V100 H0 Z M33.333 66.667 H66.667 V100 H33.333 Z M66.667 66.667 H100 V100 H66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 33.333 H33.333 V66.667 H0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "orange"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 33.333 H66.667 V66.667 H33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 33.333 H100 V66.667 H66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 0 H33.333 V33.333 H0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M83.334 0 L88.889 33.333 L100 33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M16.666 33.333 L0 66.667 L11.111 66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M16.666 33.333 L11.111 66.667 L22.222 66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "orange"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M16.666 33.333 L22.222 66.667 L33.333 66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M83.334 0 L66.667 33.333 L77.778 33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M83.334 0 L77.778 33.333 L88.889 33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M50 0 A16.666 16.666 0 0 0 50 33.333 L50 0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M50 6 A10.667 10.667 0 0 0 50 27.333 L50 6 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 50 A16.666 16.666 0 0 1 100 50 L66.667 50 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cyan"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M72.667 50 A10.667 10.667 0 0 1 94 50 L72.667 50 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 85.889 Q16.666 82.889 33.333 85.889 L33.333 91.889 Q16.666 94.889 0 91.889 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 74.778 Q16.666 71.778 33.333 74.778 L33.333 80.778 Q16.666 83.778 0 80.778 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M41.444 33.333 Q38.444 50 41.444 66.667 L47.444 66.667 Q50.444 50 47.444 33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "orange"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M52.556 33.333 Q49.556 50 52.556 66.667 L58.556 66.667 Q61.556 50 58.556 33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M74.778 66.667 Q71.778 83.334 74.778 100 L80.778 100 Q83.778 83.334 80.778 66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M85.889 66.667 Q82.889 83.334 85.889 100 L91.889 100 Q94.889 83.334 91.889 66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 33.333 L0 0 L16.666 16.666 Z M33.333 66.667 L66.667 66.667 L50 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 0 L33.333 0 L16.666 16.666 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 33.333 L0 33.333 L16.666 16.666 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 66.667 L66.667 100 L50 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 100 L33.333 100 L50 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            }
+          ]
+        },
+        "tilePattern13": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 33.333 H100 V66.667 H66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 33.333 H66.667 V66.667 H33.333 Z M33.333 66.667 H66.667 V100 H33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 0 H33.333 V33.333 H0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cyan"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 66.667 H33.333 V100 H0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 66.667 H100 V100 H66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "orange"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 0 H66.667 V33.333 H33.333 Z M66.667 0 H100 V33.333 H66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 33.333 H33.333 V66.667 H0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M83.334 100 L66.667 66.667 L77.778 66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M83.334 100 L77.778 66.667 L88.889 66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cyan"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M83.334 100 L88.889 66.667 L100 66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M50 33.333 L33.333 0 L44.444 0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "orange"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M50 33.333 L44.444 0 L55.556 0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M50 33.333 L55.556 0 L66.667 0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 50 A16.667 16.667 0 0 0 66.667 50 L33.333 50 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M39.333 50 A10.667 10.667 0 0 0 60.667 50 L39.333 50 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 16.666 A16.666 16.666 0 0 1 100 16.666 L66.667 16.666 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "orange"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M72.667 16.666 A10.667 10.667 0 0 1 94 16.666 L72.667 16.666 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 52.556 Q16.666 49.556 33.333 52.556 L33.333 58.556 Q16.666 61.556 0 58.556 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cyan"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 41.444 Q16.666 38.444 33.333 41.444 L33.333 47.444 Q16.666 50.444 0 47.444 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 85.889 Q50 82.889 66.667 85.889 L66.667 91.889 Q50 94.889 33.333 91.889 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "orange"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 74.778 Q50 71.778 66.667 74.778 L66.667 80.778 Q50 83.778 33.333 80.778 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 0 L33.333 0 L16.666 16.666 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M100 66.667 L66.667 66.667 L83.334 50 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 100 L0 66.667 L16.666 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 66.667 L33.333 66.667 L16.666 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "orange"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 0 L33.333 33.333 L16.666 16.666 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 33.333 L0 33.333 L16.666 16.666 Z M66.667 66.667 L66.667 33.333 L83.334 50 Z M33.333 100 L0 100 L16.666 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 33.333 L100 33.333 L83.334 50 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            }
+          ]
+        },
+        "tilePattern14": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 33.333 H33.333 V66.667 H0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 33.333 H100 V66.667 H66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cyan"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 33.333 H66.667 V66.667 H33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 0 H100 V33.333 H66.667 Z M0 66.667 H33.333 V100 H0 Z M66.667 66.667 H100 V100 H66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "orange"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 0 H33.333 V33.333 H0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 0 H66.667 V33.333 H33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 66.667 H66.667 V100 H33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M50 100 L44.444 66.667 L55.556 66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 16.666 L33.333 0 L33.333 11.111 Z M50 100 L55.556 66.667 L66.667 66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 16.666 L33.333 11.111 L33.333 22.222 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cyan"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 16.666 L33.333 22.222 L33.333 33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M50 100 L33.333 66.667 L44.444 66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M83.334 33.333 A16.666 16.666 0 0 1 83.334 66.667 L83.334 33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "orange"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M83.334 39.333 A10.667 10.667 0 0 1 83.334 60.667 L83.334 39.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 50 A16.666 16.666 0 0 0 33.333 50 L0 50 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M6 50 A10.667 10.667 0 0 0 27.333 50 L6 50 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 85.889 Q83.334 82.889 100 85.889 L100 91.889 Q83.334 94.889 66.667 91.889 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 74.778 Q83.334 71.778 100 74.778 L100 80.778 Q83.334 83.778 66.667 80.778 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M19.222 66.667 Q16.222 83.334 19.222 100 L25.222 100 Q28.222 83.334 25.222 66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cyan"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M8.111 66.667 Q5.111 83.334 8.111 100 L14.111 100 Q17.111 83.334 14.111 66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M8.111 0 Q5.111 16.666 8.111 33.333 L14.111 33.333 Q17.111 16.666 14.111 0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "orange"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M19.222 0 Q16.222 16.666 19.222 33.333 L25.222 33.333 Q28.222 16.666 25.222 0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M100 0 L100 33.333 L83.334 16.666 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M100 33.333 L66.667 33.333 L83.334 16.666 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 0 L100 0 L83.334 16.666 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 33.333 L66.667 66.667 L50 50 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "orange"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 66.667 L33.333 66.667 L50 50 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 33.333 L66.667 33.333 L50 50 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            }
+          ]
+        },
+        "tilePattern15": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 0 H100 V33.333 H66.667 Z M66.667 66.667 H100 V100 H66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 33.333 H33.333 V66.667 H0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cyan"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 33.333 H100 V66.667 H66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "orange"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 66.667 H66.667 V100 H33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 0 H33.333 V33.333 H0 Z M33.333 0 H66.667 V33.333 H33.333 Z M33.333 33.333 H66.667 V66.667 H33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 66.667 H33.333 V100 H0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M50 33.333 L55.556 0 L66.667 0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 83.334 L0 66.667 L0 77.778 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M50 33.333 L33.333 0 L44.444 0 Z M33.333 83.334 L0 77.778 L0 88.889 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M50 33.333 L44.444 0 L55.556 0 Z M33.333 83.334 L0 88.889 L0 100 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 16.666 A16.666 16.666 0 0 0 33.333 16.666 L0 16.666 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M6 16.666 A10.667 10.667 0 0 0 27.333 16.666 L6 16.666 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 83.334 A16.666 16.666 0 0 1 100 83.334 L66.667 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "orange"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M72.667 83.334 A10.667 10.667 0 0 1 94 83.334 L72.667 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 16.666 A16.666 16.666 0 0 1 100 16.666 L66.667 16.666 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M72.667 16.666 A10.667 10.667 0 0 1 94 16.666 L72.667 16.666 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 41.444 Q50 38.444 66.667 41.444 L66.667 47.444 Q50 50.444 33.333 47.444 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 52.556 Q50 49.556 66.667 52.556 L66.667 58.556 Q50 61.556 33.333 58.556 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "orange"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M100 33.333 L100 66.667 L83.334 50 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M100 66.667 L66.667 66.667 L83.334 50 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 66.667 L0 66.667 L16.666 50 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cyan"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 66.667 L0 33.333 L16.666 50 Z M66.667 33.333 L100 33.333 L83.334 50 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 66.667 L66.667 66.667 L50 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "orange"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 33.333 L33.333 66.667 L16.666 50 Z M66.667 66.667 L66.667 100 L50 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 100 L33.333 66.667 L50 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            }
+          ]
+        },
+        "tilePattern16": {
+          "elements": [
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 0 H66.667 V33.333 H33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 33.333 H33.333 V66.667 H0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 0 H100 V33.333 H66.667 Z M33.333 66.667 H66.667 V100 H33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cyan"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 33.333 H100 V66.667 H66.667 Z M0 66.667 H33.333 V100 H0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 0 H33.333 V33.333 H0 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "orange"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 33.333 H66.667 V66.667 H33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 66.667 H100 V100 H66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-cell"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M50 0 L33.333 33.333 L44.444 33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M50 0 L44.444 33.333 L55.556 33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "orange"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M50 0 L55.556 33.333 L66.667 33.333 Z M83.334 33.333 L66.667 66.667 L77.778 66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M83.334 33.333 L77.778 66.667 L88.889 66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M83.334 33.333 L88.889 66.667 L100 66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-motif shell-family-0"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M16.666 33.333 A16.666 16.666 0 0 1 16.666 66.667 L16.666 33.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "navy"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M16.666 39.333 A10.667 10.667 0 0 1 16.666 60.667 L16.666 39.333 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M50 66.667 A16.666 16.666 0 0 0 50 100 L50 66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cyan"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M50 72.667 A10.667 10.667 0 0 0 50 94 L50 72.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-motif shell-family-1"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M74.778 66.667 Q71.778 83.334 74.778 100 L80.778 100 Q83.778 83.334 80.778 66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cyan"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M85.889 66.667 Q82.889 83.334 85.889 100 L91.889 100 Q94.889 83.334 91.889 66.667 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 19.222 Q16.666 16.222 33.333 19.222 L33.333 25.222 Q16.666 28.222 0 25.222 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M0 8.111 Q16.666 5.111 33.333 8.111 L33.333 14.111 Q16.666 17.111 0 14.111 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-motif shell-family-2"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 66.667 L33.333 33.333 L50 50 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "blue"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M100 33.333 L66.667 33.333 L83.334 16.666 Z M33.333 66.667 L33.333 100 L16.666 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cyan"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 33.333 L66.667 0 L83.334 16.666 Z M33.333 100 L0 100 L16.666 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "pink"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M100 0 L100 33.333 L83.334 16.666 Z M0 66.667 L33.333 66.667 L16.666 83.334 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "yellow"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M33.333 33.333 L66.667 33.333 L50 50 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "mint"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            },
+            {
+              "type": "element",
+              "name": "path",
+              "attributes": {
+                "d": "M66.667 33.333 L66.667 66.667 L50 50 Z",
+                "fill": {
+                  "type": "color",
+                  "name": "cream"
+                },
+                "class": "mosaic-motif shell-family-3"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "colors": {
+    "navy": {
+      "values": [
+        "#211b78",
+        "#28217f",
+        "#302681"
+      ]
+    },
+    "blue": {
+      "values": [
+        "#293ab8",
+        "#3450df",
+        "#405be4"
+      ]
+    },
+    "cyan": {
+      "values": [
+        "#28acd7",
+        "#37c7e3",
+        "#5bd4e8"
+      ]
+    },
+    "pink": {
+      "values": [
+        "#e82371",
+        "#f2337d",
+        "#f34b8b"
+      ]
+    },
+    "orange": {
+      "values": [
+        "#f2612d",
+        "#ff7838",
+        "#f98d45"
+      ]
+    },
+    "yellow": {
+      "values": [
+        "#e9b91b",
+        "#ffd02c",
+        "#f7db4d"
+      ]
+    },
+    "mint": {
+      "values": [
+        "#159b75",
+        "#29b887",
+        "#50c998"
+      ]
+    },
+    "cream": {
+      "values": [
+        "#fff0d8",
+        "#fff8e9",
+        "#f7f0e3"
+      ]
+    }
+  }
+}

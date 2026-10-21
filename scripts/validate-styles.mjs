@@ -17,6 +17,10 @@ const roles = Object.keys(palette);
 
 for (const density of [3, 5, 7, 9, 12]) {
   const definition = JSON.parse(await readFile(new URL(`../styles/ikonym-${density}.json`, import.meta.url), 'utf8'));
+  const pythonDefinition = JSON.parse(await readFile(new URL(`../python/ikonym/styles/ikonym-${density}.json`, import.meta.url), 'utf8'));
+  if (JSON.stringify(pythonDefinition) !== JSON.stringify(definition)) {
+    throw new Error(`${density}×${density} Python package style differs from the shared definition`);
+  }
   for (const role of roles) {
     if (JSON.stringify(definition.colors[role]?.values) !== JSON.stringify(palette[role])) {
       throw new Error(`${density}×${density} mosaic has an unexpected ${role} palette`);

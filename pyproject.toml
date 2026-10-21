@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ikonym"
+version = "0.1.0"
+description = "Deterministic geometric SVG avatars generated from an identifier."
+readme = { file = "README.pypi.md", content-type = "text/markdown" }
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Numera11y" }]
+keywords = ["avatar", "dicebear", "identicon", "svg", "mosaic"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Topic :: Multimedia :: Graphics",
+]
+
+[project.optional-dependencies]
+dicebear = ["dicebear-core>=10.7,<11"]
+
+[project.urls]
+Homepage = "https://ikonym.numera11y.fr"
+Repository = "https://github.com/numera11y/ikonym"
+Issues = "https://github.com/numera11y/ikonym/issues"
+Documentation = "https://ikonym.numera11y.fr/en/"
+
+[tool.setuptools]
+package-dir = { "" = "python" }
+
+[tool.setuptools.packages.find]
+where = ["python"]
+
+[tool.setuptools.package-data]
+ikonym = ["py.typed", "styles/*.json"]

@@ -21,6 +21,8 @@ Ikonym est distribué sous licence MIT. Vous pouvez l’utiliser, le modifier et
 
 Une même définition de style JSON est lue par les moteurs DiceBear officiels pour JavaScript, PHP, Python, Rust, Go, Dart et C#. Cela évite sept ports séparés et conserve le même résultat pour un identifiant donné. Voir le [guide d’installation et les exemples complets](docs/INTEGRATIONS.fr.md). Le package JavaScript est publié sur npm; `numera11y/ikonym` est aussi disponible sur Packagist pour PHP et inclut un helper pour charger les définitions JSON portables.
 
+La distribution Python `ikonym` est en préparation pour PyPI. Elle inclura les cinq mêmes définitions JSON et une API Python pour charger les styles et générer des avatars avec DiceBear Core.
+
 ## Utilisation
 
 ```ts
@@ -49,6 +51,19 @@ npm run dev
 Le site est généré statiquement avec Astro sous `/en/` et `/fr/`. La racine `/` redirige vers l’anglais par défaut et propose des liens visibles vers les deux versions. Pour publier, définissez `PUBLIC_SITE_URL` sur l’URL canonique du site afin de produire les balises `canonical` et `hreflang` absolues.
 
 La démo permet de saisir un identifiant, de choisir la densité de mosaïque, d’arrondir sa silhouette, puis de copier ou télécharger le SVG et sa définition DiceBear.
+
+## Distribution Python
+
+La publication sur PyPI est en préparation. La distribution inclut les cinq mêmes styles JSON; son extra optionnel `dicebear` ajoute le rendu SVG. Pour construire une roue et une archive source localement :
+
+```sh
+npm run styles:build
+python -m pip install build twine
+python -m build --outdir python-dist
+python -m twine check python-dist/*
+```
+
+Après publication, installez le moteur de rendu avec `pip install "ikonym[dicebear]"`. Le chargement des définitions JSON seul n’a aucune dépendance d’exécution.
 
 ## Construire la bibliothèque
 

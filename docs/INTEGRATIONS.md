@@ -4,7 +4,7 @@ Ikonym provides portable DiceBear JSON style definitions. Official DiceBear engi
 
 ## Current availability
 
-The `ikonym` package is published to npm and the `numera11y/ikonym` package is published on Packagist. The Composer package includes a PHP helper and the portable style definitions. This site also offers direct downloads of the npm tarball and JSON styles. Source code and issue tracking are available in the [public GitHub repository](https://github.com/numera11y/ikonym).
+The `ikonym` package is published to npm and the `numera11y/ikonym` package is published on Packagist. The Composer package includes a PHP helper and the portable style definitions. A Python `ikonym` distribution is being prepared for PyPI. This site also offers direct downloads of the npm tarball and JSON styles. Source code and issue tracking are available in the [public GitHub repository](https://github.com/numera11y/ikonym).
 
 Choose a 3×3, 5×5, 7×7, 9×9, or 12×12 grid for the desired density. After release, the style will still need to be proposed to the DiceBear collections before it can be installed from their registries.
 
@@ -83,15 +83,31 @@ $svg = (string) $avatar;
 
 Requirements: Python 3.10+.
 
+The `ikonym` PyPI distribution is being prepared. It bundles all five JSON style definitions and includes an optional `dicebear` extra for SVG rendering. After release, install the helper with:
+
+```sh
+pip install "ikonym[dicebear]"
+```
+
+```python
+from ikonym import create_avatar
+
+svg = create_avatar("account-4821", density=7, size=128)
+```
+
+To use the portable style definition with another engine, load it directly without the optional extra:
+
 ```sh
 pip install dicebear-core
 ```
 
 ```python
+import json
 from pathlib import Path
 from dicebear import Avatar, Style
 
-style = Style.from_json(Path('styles/ikonym-7.json').read_text('utf-8'))
+definition = json.loads(Path('styles/ikonym-7.json').read_text('utf-8'))
+style = Style(definition)
 avatar = Avatar(style, {
     'seed': 'ikon-satin',
     'size': 128,

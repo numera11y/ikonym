@@ -7,8 +7,10 @@
 /node_modules/ export-ignore
 /package-lock.json export-ignore
 /package.json export-ignore
+/python/ export-ignore
 /phpunit.xml export-ignore
 /public/ export-ignore
+/python/ export-ignore
 /scripts/ export-ignore
 /src/ export-ignore
 /tests/ export-ignore

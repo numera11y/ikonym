@@ -3,6 +3,7 @@ import { createTileFamilyGrid } from './tile-families.mjs';
 
 const outputDirectory = new URL('../styles/', import.meta.url);
 const publicDirectory = new URL('../public/downloads/styles/', import.meta.url);
+const pythonStylesDirectory = new URL('../python/ikonym/styles/', import.meta.url);
 const densities = [3, 5, 7, 9, 12];
 const variantCount = 16;
 const palette = {
@@ -185,9 +186,11 @@ function buildDefinition(density) {
 
 await mkdir(outputDirectory, { recursive: true });
 await mkdir(publicDirectory, { recursive: true });
+await mkdir(pythonStylesDirectory, { recursive: true });
 for (const oldStyleName of ['duodoodles-5', 'duodoodles-7', 'duodoodles-9', 'duodoodles-8', 'duodoodles-16', 'duodoodles-24', 'nacreline-3', 'nacreline-5', 'nacreline-7', 'nacreline-9', 'nacreline-12']) {
   await rm(new URL(`${oldStyleName}.json`, outputDirectory), { force: true });
   await rm(new URL(`${oldStyleName}.json`, publicDirectory), { force: true });
+  await rm(new URL(`${oldStyleName}.json`, pythonStylesDirectory), { force: true });
 }
 await rm(new URL('../public/downloads/duodoodles-0.1.0.tgz', import.meta.url), { force: true });
 await rm(new URL('../public/downloads/nacreline-0.1.0.tgz', import.meta.url), { force: true });
@@ -196,4 +199,5 @@ for (const density of densities) {
   const json = `${JSON.stringify(buildDefinition(density), null, 2)}\n`;
   await writeFile(new URL(`ikonym-${density}.json`, outputDirectory), json, 'utf8');
   await writeFile(new URL(`ikonym-${density}.json`, publicDirectory), json, 'utf8');
+  await writeFile(new URL(`ikonym-${density}.json`, pythonStylesDirectory), json, 'utf8');
 }

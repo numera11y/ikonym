@@ -32,10 +32,12 @@ use Numera11y\\Ikonym\\StyleDefinition;
   },
   Python: {
     install: 'pip install dicebear-core',
-    code: `from pathlib import Path
+    code: `import json
+from pathlib import Path
 from dicebear import Avatar, Style
 
-style = Style.from_json(Path('styles/ikonym-7.json').read_text())
+definition = json.loads(Path('styles/ikonym-7.json').read_text())
+style = Style(definition)
 svg = Avatar(style, {'seed': 'nacre-lunaire', 'size': 128}).to_string()`,
   },
   Rust: {

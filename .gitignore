@@ -1,6 +1,13 @@
 node_modules/
 dist/
 demo-dist/
+python-dist/
+build/
+.venv/
+__pycache__/
+*.egg-info/
+*.whl
+*.tar.gz
 .astro/
 .impeccable/questions/
 *.tsbuildinfo
