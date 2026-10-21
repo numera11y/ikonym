@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 24" role="img" aria-labelledby="title">
+  <title id="title">Ikonym</title>
+  <path fill="#c91d57" d="M5 2 9 5v13l-4 4-4-4V5z"/>
+  <rect x="11" y="4" width="8" height="15" rx="3" fill="#159b75"/>
+  <path fill="#e9b91b" d="m22 2 8 18h-8z"/>
+</svg>

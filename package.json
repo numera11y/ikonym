@@ -1,0 +1,64 @@
+{
+  "name": "ikonym",
+  "version": "0.1.0",
+  "description": "Deterministic geometric SVG avatars generated from an identifier.",
+  "homepage": "https://ikonym.numera11y.fr",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/numera11y/ikonym.git"
+  },
+  "bugs": {
+    "url": "https://github.com/numera11y/ikonym/issues"
+  },
+  "type": "module",
+  "license": "MIT",
+  "sideEffects": [
+    "./src/*.css",
+    "./src/**/*.css",
+    "./src/main.ts"
+  ],
+  "files": [
+    "dist",
+    "styles/*.json",
+    "docs/*.md",
+    "README*.md",
+    "LICENSE"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./styles/ikonym-3.json": "./styles/ikonym-3.json",
+    "./styles/ikonym-5.json": "./styles/ikonym-5.json",
+    "./styles/ikonym-7.json": "./styles/ikonym-7.json",
+    "./styles/ikonym-9.json": "./styles/ikonym-9.json",
+    "./styles/ikonym-12.json": "./styles/ikonym-12.json"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "npm run build:lib && npm run social:build && astro build",
+    "build:site": "npm run build:lib && npm run social:build && astro build",
+    "build:lib": "tsc -p tsconfig.lib.json && vite build --config vite.lib.config.ts",
+    "styles:build": "node scripts/build-styles.mjs",
+    "styles:validate": "npm run build:lib && node scripts/validate-styles.mjs",
+    "social:build": "node scripts/build-social-images.mjs",
+    "contrast:validate": "node scripts/validate-contrast.mjs",
+    "package:download": "npm pack --pack-destination public/downloads",
+    "preview": "astro preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "astro": "^7.4.2",
+    "typescript": "^5.7.3",
+    "vite": "^6.1.0"
+  },
+  "dependencies": {
+    "@dicebear/core": "^10.7.0"
+  }
+}

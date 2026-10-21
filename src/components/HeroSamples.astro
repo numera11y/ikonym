@@ -1,0 +1,24 @@
+---
+import { createAvatar } from '../lib/index';
+
+interface Props { locale: 'en' | 'fr' }
+
+const { locale } = Astro.props;
+const examples = [
+  { seed: 'ikon-lunaire', density: 3, label: locale === 'en' ? '3 × 3 · expressive' : '3 × 3 · expressive' },
+  { seed: 'conque-velours', density: 5, label: locale === 'en' ? '5 × 5 · open' : '5 × 5 · aérée' },
+  { seed: 'courant-de-nacre', density: 9, label: locale === 'en' ? '9 × 9 · detailed' : '9 × 9 · détaillée' },
+  { seed: 'perle-abyssale', density: 12, label: locale === 'en' ? '12 × 12 · fine' : '12 × 12 · fine' },
+] as const;
+---
+
+<div class="hero-art" id="static-hero-art" aria-label={locale === 'en' ? 'Examples of Ikonym avatar densities' : 'Exemples de densité des mosaïques Ikonym'}>
+  {examples.map(({ seed, density, label }, index) => (
+    <figure class:list={['floating', 'specimen', `f-${['one', 'two', 'three', 'four'][index]}`]}>
+      <div class="specimen-art">
+        <div class="avatar-frame" style="--frame-ink:var(--ink);--frame-radius:0%" set:html={createAvatar(seed, { density, radius: 0 })}></div>
+      </div>
+      <figcaption>{label}</figcaption>
+    </figure>
+  ))}
+</div>

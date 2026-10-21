@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-21T04:20:00.000Z",
+  "title": "Design System: Ikonym",
+  "extensions": {
+    "shadows": [
+      {
+        "name": "specimen-lift",
+        "value": "0 9px 9px #252b3318",
+        "purpose": "A restrained lift beneath the hero specimen avatars."
+      }
+    ],
+    "motion": [
+      {
+        "name": "specimen-hover",
+        "value": "transform .22s ease-out",
+        "purpose": "A small upward movement on an interactive specimen."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "tablet",
+        "value": "850px"
+      },
+      {
+        "name": "mobile",
+        "value": "600px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Tile Mosaic Avatar",
+      "kind": "custom",
+      "refersTo": "avatar-frame",
+      "description": "A full-square geometric repeat in bold color, built from edge-matched tile cells.",
+      "html": "<div class=\"ds-avatar-frame\"><svg viewBox=\"0 0 100 100\" role=\"img\" aria-label=\"Ikonym geometric mosaic avatar\"><defs><pattern id=\"ds-tile\" width=\"25\" height=\"25\" patternUnits=\"userSpaceOnUse\"><rect width=\"25\" height=\"25\" fill=\"#211b78\"/><path d=\"M12.5 0 L25 12.5 L12.5 25 L0 12.5 Z\" fill=\"#e82371\"/><path d=\"M0 0 L12.5 12.5 L0 25 Z M25 0 L12.5 12.5 L25 25 Z\" fill=\"#28acd7\"/><rect x=\"10\" y=\"10\" width=\"5\" height=\"5\" fill=\"#ffd02c\"/></pattern></defs><rect width=\"100\" height=\"100\" fill=\"url(#ds-tile)\"/></svg></div>",
+      "css": ".ds-avatar-frame { display: inline-block; overflow: hidden; padding: 2px; border: 1.5px solid #20242a; border-radius: 3px; background: #f5f2e9; } .ds-avatar-frame svg { display: block; width: 100%; height: auto; }"
+    },
+    {
+      "name": "Primary Action",
+      "kind": "button",
+      "description": "The dark filled control used for avatar download.",
+      "html": "<button class=\"ds-button-primary\" type=\"button\">Download SVG</button>",
+      "css": ".ds-button-primary { padding: 10px 18px; border: 1px solid #20242a; border-radius: 0; background: #20242a; color: #f5f2e9; font: 700 12px Manrope, Arial, sans-serif; cursor: pointer; } .ds-button-primary:hover { filter: brightness(.84); } .ds-button-primary:focus-visible { outline: 2px solid #20242a; outline-offset: 3px; }"
+    },
+    {
+      "name": "Secondary Action",
+      "kind": "button",
+      "description": "A quiet outlined control for copy and shuffle actions.",
+      "html": "<button class=\"ds-button-secondary\" type=\"button\">Copy SVG</button>",
+      "css": ".ds-button-secondary { padding: 10px 18px; border: 1px solid #20242a; border-radius: 0; background: #f5f2e9; color: #20242a; font: 700 12px Manrope, Arial, sans-serif; cursor: pointer; } .ds-button-secondary:hover { background: #eeeae0; } .ds-button-secondary:focus-visible { outline: 2px solid #20242a; outline-offset: 3px; }"
+    },
+    {
+      "name": "Top Navigation",
+      "kind": "nav",
+      "description": "Compact dark-ink links aligned along the desktop wordmark.",
+      "html": "<nav class=\"ds-top-nav\" aria-label=\"Main navigation\"><a href=\"#studio\">Studio</a><a href=\"#gallery\">Samples</a><a href=\"#documentation\">Documentation</a></nav>",
+      "css": ".ds-top-nav { display: flex; align-items: center; gap: 24px; color: #484b4c; font: 500 12px Manrope, Arial, sans-serif; } .ds-top-nav a:hover { color: #20242a; } .ds-top-nav a:focus-visible { outline: 2px solid #20242a; outline-offset: 3px; }"
+    },
+    {
+      "name": "Seed Input",
+      "kind": "input",
+      "description": "A simple underlined field for a deterministic avatar seed.",
+      "html": "<label class=\"ds-seed-field\">Avatar seed<input type=\"text\" value=\"nacre-lunaire\"/></label>",
+      "css": ".ds-seed-field { display: grid; gap: 7px; color: #20242a; font: 500 9px 'DM Mono', monospace; } .ds-seed-field input { padding: 8px 4px; border: 0; border-bottom: 1px solid #20242a; border-radius: 0; background: transparent; color: #20242a; font: 500 12px 'DM Mono', monospace; } .ds-seed-field input:focus-visible { outline: 2px solid #20242a; outline-offset: 3px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "A Seamless Color Quilt",
+    "overview": "Ikonym keeps a steady paper-toned developer interface around saturated geometric avatars. Each identifier chooses a tile architecture, orientation, and color permutation; the repeated cells touch edge-to-edge and fill the complete avatar. Motif families alternate at every horizontal and vertical neighbor.",
+    "keyCharacteristics": [
+      "Bold navy, blue, cyan, pink, orange, yellow, mint, and cream palette.",
+      "Every avatar is a complete 3×3, 5×5, 7×7, 9×9, or 12×12 tiled mosaic.",
+      "The identifier determines motif layout, orientation, and color assignment while the interface remains fixed."
+    ],
+    "rules": [
+      {
+        "name": "The Seamless Tile Rule",
+        "body": "Every cell meets its neighbor exactly; no blank gutters, borders, or mismatched edges interrupt the tessellation.",
+        "section": "colors"
+      }
+    ],
+    "dos": [
+      "Do keep the interface theme stable while varying tile archetype and color assignment by seed.",
+      "Do fill the complete avatar square with flush tile cells.",
+      "Do change motif orientation and color rhythm while preserving the chosen tile grammar."
+    ],
+    "donts": [
+      "Don't return to fluid washes and wave-line avatar patterns.",
+      "Don't leave paper gaps or borders between tile cells.",
+      "Don't mix unrelated tile archetypes inside one avatar.",
+      "Don't trace the reference sheet's exact arrangement or present generated motifs as a specific cultural tradition."
+    ]
+  }
+}

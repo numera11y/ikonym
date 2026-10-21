@@ -1,0 +1,16 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import IndexableContent from '../../components/IndexableContent.astro';
+import HeroSamples from '../../components/HeroSamples.astro';
+
+const description = 'Ikonym generates deterministic geometric SVG avatars from a username or identifier. Open source, DiceBear-compatible, with five grid densities.';
+---
+
+<SiteLayout locale="en" title="Ikonym — geometric avatars for your apps" description={description}>
+  <HeroSamples locale="en" />
+  <IndexableContent locale="en" />
+  <script>
+    import { startIkonymApp } from '../../main.ts';
+    startIkonymApp();
+  </script>
+</SiteLayout>

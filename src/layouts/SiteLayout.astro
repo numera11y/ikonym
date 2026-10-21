@@ -1,0 +1,68 @@
+---
+interface Props {
+  locale: 'en' | 'fr';
+  title: string;
+  description: string;
+}
+
+const { locale, title, description } = Astro.props;
+const pagePath = Astro.url.pathname;
+const enPath = '/en/';
+const frPath = '/fr/';
+const canonical = Astro.site ? new URL(pagePath, Astro.site).toString() : undefined;
+const alternateEn = Astro.site ? new URL(enPath, Astro.site).toString() : undefined;
+const alternateFr = Astro.site ? new URL(frPath, Astro.site).toString() : undefined;
+const socialImagePath = locale === 'en' ? '/ikonym-social-en.png' : '/ikonym-social-fr.png';
+const socialImage = Astro.site ? new URL(socialImagePath, Astro.site).toString() : socialImagePath;
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name: 'Ikonym',
+  applicationCategory: 'DeveloperApplication',
+  operatingSystem: 'Web',
+  inLanguage: locale === 'en' ? 'en-US' : 'fr',
+  url: canonical,
+  image: socialImage,
+  description,
+  license: 'https://opensource.org/license/mit/',
+  author: { '@type': 'Organization', name: 'Numera11y', url: 'https://www.numera11y.fr/' },
+};
+---
+
+<!doctype html>
+<html lang={locale}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5f2e9" />
+    <meta name="description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Ikonym" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:locale" content={locale === 'en' ? 'en_US' : 'fr_FR'} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale:alternate" content={locale === 'en' ? 'fr_FR' : 'en_US'} />
+    <meta property="og:image" content={socialImage} />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={locale === 'en' ? 'Ikonym geometric avatar mosaic' : 'Mosaïque géométrique d’avatar Ikonym'} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={socialImage} />
+    <meta name="twitter:image:alt" content={locale === 'en' ? 'Ikonym geometric avatar mosaic' : 'Mosaïque géométrique d’avatar Ikonym'} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    {canonical && <link rel="canonical" href={canonical} />}
+    {alternateEn && <link rel="alternate" hreflang="en-US" href={alternateEn} />}
+    {alternateFr && <link rel="alternate" hreflang="fr" href={alternateFr} />}
+    {alternateEn && <link rel="alternate" hreflang="x-default" href={alternateEn} />}
+    <title>{title}</title>
+    <script type="application/ld+json" set:html={JSON.stringify(schema)}></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <slot />
+  </body>
+</html>
