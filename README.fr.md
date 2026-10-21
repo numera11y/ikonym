@@ -9,7 +9,7 @@ Chaque identifiant compose une mosaïque de formes inspirées des coquillages : 
 
 Deux carreaux voisins par un côté n’utilisent jamais la même famille de motifs, même si leur couleur ou leur orientation diffère.
 
-Le paquet `ikonym` est publié sur npm, PyPI, crates.io et pub.dev, ainsi que comme module Go; `numera11y/ikonym` est également disponible sur Packagist. Le package .NET est prêt pour une publication NuGet de confiance.
+Le paquet `ikonym` est publié sur npm, PyPI, crates.io, pub.dev et NuGet, ainsi que comme module Go; `numera11y/ikonym` est également disponible sur Packagist.
 
 Ikonym est développé par [Numera11y](https://www.numera11y.fr/) et sera présenté dans son catalogue d’outils numériques. [Consultez le code source, signalez un problème ou contribuez sur GitHub](https://github.com/numera11y/ikonym).
 
@@ -19,7 +19,7 @@ Ikonym est distribué sous licence MIT. Vous pouvez l’utiliser, le modifier et
 
 ## Intégrations multi-langages
 
-Une même définition de style JSON est lue par les moteurs DiceBear officiels pour JavaScript, PHP, Python, Rust, Go, Dart et C#. Voir le [guide d’installation et les exemples complets](docs/INTEGRATIONS.fr.md) pour les paquets publiés sur npm, Packagist, PyPI, crates.io, pub.dev et le module Go.
+Une même définition de style JSON est lue par les moteurs DiceBear officiels pour JavaScript, PHP, Python, Rust, Go, Dart et C#. Voir le [guide d’installation et les exemples complets](docs/INTEGRATIONS.fr.md) pour les paquets publiés sur npm, Packagist, PyPI, crates.io, pub.dev, NuGet et le module Go.
 
 La distribution PyPI inclut les cinq mêmes définitions JSON et une API Python pour charger les styles. Installez l’extra optionnel DiceBear avec `pip install "ikonym[dicebear]"` pour générer les avatars SVG.
 

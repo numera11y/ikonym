@@ -4,7 +4,7 @@ Ikonym fournit des définitions DiceBear portables en JSON. Les bibliothèques D
 
 ## Disponibilité actuelle
 
-Le paquet `ikonym` est publié sur npm, PyPI et crates.io, et est disponible sur pub.dev; `numera11y/ikonym` est disponible sur Packagist. Le module Go est disponible à l’adresse `github.com/numera11y/ikonym` (v0.2.0), ainsi que les bibliothèques Python et Rust. Le package .NET est compilé et prêt pour une publication de confiance via GitHub Actions. Le site propose aussi le tarball npm et le téléchargement direct des styles. Le [dépôt GitHub public](https://github.com/numera11y/ikonym) héberge le code source et le suivi des problèmes.
+Le paquet `ikonym` est publié sur npm, PyPI, crates.io, pub.dev et NuGet; `numera11y/ikonym` est disponible sur Packagist. Le module Go est disponible à l’adresse `github.com/numera11y/ikonym` (v0.2.0), ainsi que les bibliothèques Python, Rust et .NET. Le site propose aussi le tarball npm et le téléchargement direct des styles. Le [dépôt GitHub public](https://github.com/numera11y/ikonym) héberge le code source et le suivi des problèmes.
 
 Télécharge le fichier de style depuis le site ou récupère-le dans `styles/` après avoir cloné le dépôt. Choisis une grille de 3×3, 5×5, 7×7, 9×9 ou 12×12 selon la densité voulue. Après publication, le style devra être proposé dans les collections DiceBear pour être installable directement depuis chaque registre.
 
@@ -190,7 +190,7 @@ void main() {
 
 Prérequis : .NET 8+.
 
-Le package NuGet `Ikonym` est prêt. Sa première publication passera par le workflow GitHub Actions de publication de confiance; une fois le package publié, installez-le ainsi :
+Le package `Ikonym` est disponible sur NuGet :
 
 ```sh
 dotnet add package Ikonym
