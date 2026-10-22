@@ -149,7 +149,12 @@ function render() {
       <footer><a class="wordmark" href="#home" aria-label="Ikonym accueil">${brandMark}<span>ikonym<span class="dot">.</span></span></a><span>Fait avec un peu trop d’enthousiasme <b>♥</b></span><a href="#documentation">Documentation · SVG · DiceBear</a></footer>
     </main>`.replace(/DuoDoodles/g, 'Ikonym').replace(/duodoodles/g, 'ikonym')
       .replace('Chaque définition fixe le nombre de rubans; la graine détermine leur courbure, leur rythme et le duo de couleurs.', 'Le fichier choisi fixe la grille; la graine assemble une mosaïque dense, raccordée et colorée.')
-      .replace('Chaque graine produit un duo de couleurs stable. Les vagues contrastent avec leur fond à au moins 4,5:1, au-dessus du seuil WCAG AA de 3:1 pour les graphiques non textuels. Le fond du site reste fixe; l’encre de l’avatar et son cadre varient avec sa graine. Cette mesure couvre le contraste de la palette, pas la conformité complète du produit à WCAG.', 'Chaque carreau est une pièce d’un motif plein. La graine décide du module, de son orientation et de la palette vive; les variations de couleur sont décoratives, et l’interface garde son propre contraste accessible.')
+      .replace(
+        'Chaque graine produit un duo de couleurs stable. Les vagues contrastent avec leur fond à au moins 4,5:1, au-dessus du seuil WCAG AA de 3:1 pour les graphiques non textuels. Le fond du site reste fixe; l’encre de l’avatar et son cadre varient avec sa graine. Cette mesure couvre le contraste de la palette, pas la conformité complète du produit à WCAG.',
+        locale === 'en'
+          ? 'Each tile contributes to a complete pattern. The identifier determines the tile motif, its orientation, and the vivid palette; color variations are decorative, and the interface maintains its own accessible contrast.'
+          : 'Chaque carreau est une pièce d’un motif plein. L’identifiant décide du module, de son orientation et de la palette vive; les variations de couleur sont décoratives, et l’interface garde son propre contraste accessible.',
+      )
       .replace('Une définition de style DiceBear en JSON suffit pour utiliser les avatars depuis JavaScript, PHP, Python, Rust, Go, Dart ou C#.', 'Une définition DiceBear en JSON compose la même mosaïque dans JavaScript, PHP, Python, Rust, Go, Dart ou C#.')
       .replace('Chaque graine façonne une nouvelle combinaison de stries, d’ondes et de reflets.', 'Chaque graine compose une mosaïque originale de formes vives qui s’assemblent bord à bord.')
       .replace(/waveCount/g, 'density')
